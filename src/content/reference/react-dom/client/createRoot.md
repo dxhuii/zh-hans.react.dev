@@ -113,15 +113,7 @@ root.unmount();
 
 此方法适用的场景是，React 根节点中的 DOM 节点（或者它的任何一个父级节点）被除了这个方法以外的代码移除了。举个例子，试想在一个 jQuery 选项卡面板中，非活跃状态的选项卡的 DOM 结构将被移除。一个标签页被移除时，它内部的所有内容（包括 React 根节点）也将会从 DOM 树移除。在这种情况下，你才需要调用 `root.unmount` 来通知 React “停止”控制已经被移除的根节点的内容。否则，被移除的根节点的内部组件就不能及时释放消息订阅等资源。
 
-<<<<<<< HEAD
 调用 `root.unmout` 将卸载根节点内的所有组件，该根节点上的 React 将被剥离，即所有事件处理程序以及组件树上的状态将被移除。
-
-#### 参数 {/*root-unmount-parameters*/}
-
-`root.unmount` 不接收任何参数。
-=======
-Calling `root.unmount` will unmount all the components in the root and "detach" React from the root DOM node, including removing any event handlers or state in the tree.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 
 #### 返回值 {/*root-unmount-returns*/}
@@ -200,11 +192,7 @@ function Counter() {
 
 </Sandpack>
 
-<<<<<<< HEAD
 **如果你的应用程序完全由 React 构建，你仅应该创建全局唯一的一个根节点，并只调用一次 [`root.render`](#root-render)**。
-=======
-**If your app is fully built with React, you shouldn't need to create any more roots, or to call [`root.render`](#root-render) again.**
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 从这时起，React 将会控制整个应用程序的 DOM。如果要添加更多组件，[可以将它们嵌套进 `App` 组件中](/learn/importing-and-exporting-components)。如果你需要更新视图，每一个组件都可以通过使用 [state](/reference/react/useState) 做到这一点。如果你需要额外显示一些在这个 DOM 节点之外的内容，比如一个弹窗或者提示框，那么可以 [使用 portal 进行渲染](/reference/react-dom/createPortal)。
 

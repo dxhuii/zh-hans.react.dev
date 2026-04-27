@@ -294,11 +294,7 @@ function ProfilePage() {
 
 在上述的 `Post` 组件中加载数据的具体方式取决于你使用的框架。如果你使用了一个支持 Suspense 的框架，你可以它的文档中找到获取数据的详细方式。
 
-<<<<<<< HEAD
-并不一定就得使用某个框架才能使用支持 Suspense 的获取数据方式。但实现一个支持 Suspense 的数据源的具体要求并不明确而且目前没有参考实例。不过在 React 未来的版本中，官方将推出一个能够通过 Suspense 来聚合数据源的 API。 
-=======
-Suspense-enabled data fetching without the use of an opinionated framework is not yet supported. The requirements for implementing a Suspense-enabled data source are unstable and undocumented. An official API for integrating data sources with Suspense will be released in a future version of React.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+并不一定就得使用某个框架才能使用支持 Suspense 的获取数据方式。但实现一个支持 Suspense 的数据源的具体要求并不明确而且目前没有参考实例。不过在 React 未来的版本中，官方将推出一个能够通过 Suspense 来聚合数据源的 API。
 
 </Note>
 
@@ -405,11 +401,7 @@ const { pipe } = renderToPipeableStream(<App />, {
   onShellError(error) {
     response.statusCode = 500;
     response.setHeader('content-type', 'text/html');
-<<<<<<< HEAD
-    response.send('<h1>出错了</h1>'); 
-=======
-    response.send('<h1>Something went wrong</h1>');
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+    response.send('<h1>出错了</h1>');
   },
   onError(error) {
     console.error(error);
@@ -468,11 +460,7 @@ const { pipe } = renderToPipeableStream(<App />, {
   onShellError(error) {
     response.statusCode = 500;
     response.setHeader('content-type', 'text/html');
-<<<<<<< HEAD
-    response.send('<h1>出错了</h1>'); 
-=======
-    response.send('<h1>Something went wrong</h1>');
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+    response.send('<h1>出错了</h1>');
   },
   onError(error) {
     console.error(error);
@@ -498,11 +486,7 @@ const { pipe } = renderToPipeableStream(<App />, {
   onShellError(error) {
     response.statusCode = 500;
     response.setHeader('content-type', 'text/html');
-<<<<<<< HEAD
-    response.send('<h1>出错了</h1>'); 
-=======
-    response.send('<h1>Something went wrong</h1>');
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+    response.send('<h1>出错了</h1>');
   },
   onError(error) {
     didError = true;
@@ -546,11 +530,7 @@ const { pipe } = renderToPipeableStream(<App />, {
   onShellError(error) {
    response.statusCode = getStatusCode();
    response.setHeader('content-type', 'text/html');
-<<<<<<< HEAD
-   response.send('<h1>出错了</h1>'); 
-=======
-   response.send('<h1>Something went wrong</h1>');
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+   response.send('<h1>出错了</h1>');
   },
   onError(error) {
     didError = true;
@@ -590,11 +570,7 @@ const { pipe } = renderToPipeableStream(<App />, {
   onShellError(error) {
     response.statusCode = 500;
     response.setHeader('content-type', 'text/html');
-<<<<<<< HEAD
-    response.send('<h1>出错了</h1>'); 
-=======
-    response.send('<h1>Something went wrong</h1>');
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+    response.send('<h1>出错了</h1>');
   },
   onAllReady() {
     if (isCrawler) {
