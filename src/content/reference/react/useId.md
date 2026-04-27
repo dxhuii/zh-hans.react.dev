@@ -193,11 +193,7 @@ input { margin: 5px; }
 
 ### 为多个相关元素生成 ID {/*generating-ids-for-several-related-elements*/}
 
-<<<<<<< HEAD
 如果你需要为多个相关元素生成 ID，可以调用 `useId` 来为它们生成共同的前缀：
-=======
-If you need to give IDs to multiple related elements, you can call `useId` to generate a shared prefix for them:
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 <Sandpack>
 

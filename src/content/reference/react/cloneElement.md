@@ -246,11 +246,7 @@ button {
 
 ### 通过 props 传递数据 {/*passing-data-with-a-render-prop*/}
 
-<<<<<<< HEAD
 接受类似 `renderItem` 这样的 *render prop* 代替 `cloneElement` 的用法。在这里，`List` 接收 `renderItem` 作为 props。`List` 为数组每一项调用 `renderItem`，并传递 `isHighlighted` 作为参数：
-=======
-Instead of using `cloneElement`, consider accepting a *render prop* like `renderItem`. Here, `List` receives `renderItem` as a prop. `List` calls `renderItem` for every item and passes `isHighlighted` as an argument:
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 ```js {1,7}
 export default function List({ items, renderItem }) {

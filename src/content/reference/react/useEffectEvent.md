@@ -4,11 +4,7 @@ title: useEffectEvent
 
 <Intro>
 
-<<<<<<< HEAD
-`useEffectEvent` 是一个 React Hook，它可以让你将 Effect 中的非响应式逻辑提取到一个可复用的函数中，这个函数称为 [Effect Event](/learn/separating-events-from-effects#declaring-an-effect-event)。
-=======
-`useEffectEvent` is a React Hook that lets you separate events from Effects.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+`useEffectEvent` 是一个 React Hook，它可以让你将 Effect 中的事件处理独立出来。
 
 ```js
 const onEvent = useEffectEvent(callback)
@@ -18,21 +14,13 @@ const onEvent = useEffectEvent(callback)
 
 <InlineToc />
 
-<<<<<<< HEAD
+---
+
 ## 参考 {/*reference*/}
 
 ### `useEffectEvent(callback)` {/*useeffectevent*/}
 
-在组件的顶层调用 `useEffectEvent` 来声明一个 Effect Event。Effect Event 是你可以在 Effect 中调用的函数，例如 `useEffect`：
-=======
----
-
-## Reference {/*reference*/}
-
-### `useEffectEvent(callback)` {/*useeffectevent*/}
-
-Call `useEffectEvent` at the top level of your component to create an Effect Event.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+在组件的顶层调用 `useEffectEvent` 来声明一个 Effect Event。
 
 ```js {4,6}
 import { useEffectEvent, useEffect } from 'react';
@@ -44,46 +32,26 @@ function ChatRoom({ roomId, theme }) {
 }
 ```
 
-<<<<<<< HEAD
-[在下方查看更多示例](#usage)
-=======
 Effect Events are a part of your Effect logic, but they behave more like an event handler. They always “see” the latest values from render (like props and state) without re-synchronizing your Effect, so they're excluded from Effect dependencies. See [Separating Events from Effects](/learn/separating-events-from-effects#extracting-non-reactive-logic-out-of-effects) to learn more.
 
-[See more examples below.](#usage)
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+[在下方查看更多示例](#usage)
 
 #### 参数 {/*parameters*/}
 
-<<<<<<< HEAD
-- `callback`：一个包含你 Effect Event 逻辑的函数。当你使用 `useEffectEvent` 定义一个 Effect Event 时，`callback` 在被调用时总是可以访问到最新的 props 和 state。这有助于避免陈旧闭包问题。
-=======
 * `callback`: A function containing the logic for your Effect Event. The function can accept any number of arguments and return any value. When you call the returned Effect Event function, the `callback` always accesses the latest committed values from render at the time of the call.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 #### 返回值 {/*returns*/}
 
-<<<<<<< HEAD
-返回一个 Effect Event 函数。你可以在 `useEffect`、`useLayoutEffect` 或 `useInsertionEffect` 中调用这个函数。
-=======
 `useEffectEvent` returns an Effect Event function with the same type signature as your `callback`.
 
 You can call this function inside `useEffect`, `useLayoutEffect`, `useInsertionEffect`, or from within other Effect Events in the same component.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 将强制执行此限制，以防止在错误的上下文中调用效果事件。
 
-<<<<<<< HEAD
-#### 注意事项 {/*caveats*/}
-
-- **仅在 Effect 中调用**：Effect Event 应该只在 Effect 中调用。在使用它的 Effect 之前定义它。不要将它传递给其他组件或 hooks。[`eslint-plugin-react-hooks`](/reference/eslint-plugin-react-hooks) linter（6.1.1 或者更高版本）将强制执行此限制，以防止在错误的上下文中调用 Effect Events。
-- **不是依赖数组的捷径**：不要用 `useEffectEvent` 来避免在 Effect 的依赖数组中声明依赖。这可能会隐藏 bug 并让代码更难理解。更推荐显式依赖，或使用 ref 来比较之前的值。
-- **用于非响应式逻辑**：仅在逻辑不依赖变化的值时使用 `useEffectEvent` 来提取。
-=======
 * `useEffectEvent` is a Hook, so you can only call it **at the top level of your component** or your own Hooks. You can't call it inside loops or conditions. If you need that, extract a new component and move the Effect Event into it.
 * Effect Events can only be called from inside Effects or other Effect Events. Do not call them during rendering or pass them to other components or Hooks. The [`eslint-plugin-react-hooks`](/reference/eslint-plugin-react-hooks) linter enforces this restriction.
 * Do not use `useEffectEvent` to avoid specifying dependencies in your Effect's dependency array. This hides bugs and makes your code harder to understand. Only use it for logic that is genuinely an event fired from Effects.
 * Effect Event functions do not have a stable identity. Their identity intentionally changes on every render.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 <DeepDive>
 
@@ -110,21 +78,11 @@ This design reinforces that Effect Events conceptually belong to a particular ef
 
 ## 用法 {/*usage*/}
 
-<<<<<<< HEAD
-### 读取最新的 props 和 state {/*reading-the-latest-props-and-state*/}
-
-通常，当你在 Effect 中访问一个响应式值时，你必须把它包含在依赖数组里。这样可以确保当这个值改变时，Effect 会再次运行，这通常是期望的行为。
-
-但在某些情况下，你可能只想在 Effect 中读取最新的 props 或 state，而不希望当这些值改变时让 Effect 重新运行。
-
-要在 Effect 中[读取最新的 props 或 state](/learn/separating-events-from-effects#reading-latest-props-and-state-with-effect-events)，而不让这些值成为响应式依赖，请把它们放进一个 Effect Event 中。
-=======
 
 ### Using an event in an Effect {/*using-an-event-in-an-effect*/}
 
 Call `useEffectEvent` at the top level of your component to create an *Effect Event*:
 
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 ```js [[1, 1, "onConnected"]]
 const onConnected = useEffectEvent(() => {
@@ -224,17 +182,11 @@ export default function Timer() {
 }
 ```
 
-<<<<<<< HEAD
-在本例中，当 `url` 发生变化时，Effect 应在呈现后重新运行（以记录新页面的访问），但当 `numberOfItems` 发生变化时，它 **不** 应该重新运行。通过将日志记录逻辑封装在一个 Effect 事件中，`numberOfItems` 就变成了非响应的。它总是从最新值读取，而不会触发 Effect。
-
-你可以将 `url` 等响应式值作为参数传递给 Effect Event，使其保持响应状态，同时在事件内部访问最新的非响应式值。
-=======
 ```css
 button { margin: 10px; }
 ```
 
 </Sandpack>
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 Try changing the increment value while the timer is running. The counter immediately uses the new increment value, but the timer keeps ticking smoothly without restarting.
 

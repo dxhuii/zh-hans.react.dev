@@ -4,11 +4,7 @@ title: <Fragment> (<>...</>)
 
 <Intro>
 
-<<<<<<< HEAD
 `<Fragment>` 通常使用 `<>...</>` 代替，它们都允许你在不添加额外节点的情况下将子元素组合。
-=======
-`<Fragment>`, often used via `<>...</>` syntax, lets you group elements without a wrapper node.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 <Canary> Fragments can also accept refs, which enable interacting with underlying DOM nodes without adding wrapper elements. See reference and usage below.</Canary>
 

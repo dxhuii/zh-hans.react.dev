@@ -724,11 +724,7 @@ class Rectangle extends Component {
 
 #### 注意 {/*shouldcomponentupdate-caveats*/}
 
-<<<<<<< HEAD
 - 此方法 **仅仅** 作为性能优化而存在。如果你的组件在没有它的情况下损坏，请先修复组件。
-=======
-- This method *only* exists as a performance optimization. If your component breaks without it, fix that first.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 - 可以考虑使用 [`PureComponent`](/reference/react/PureComponent) 而不是手写 `shouldComponentUpdate`。`PureComponent` 会浅比较 props 和 state 以及减少错过必要更新的概率。
 

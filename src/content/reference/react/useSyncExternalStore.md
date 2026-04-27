@@ -107,11 +107,7 @@ function TodosApp() {
 
 React 会用这些函数来保持你的组件订阅到 store 并在它改变时重新渲染。
 
-<<<<<<< HEAD
 例如，在下面的沙盒中，`todosStore` 被实现为一个保存 React 之外数据的外部 store。`TodosApp` 组件通过 `useSyncExternalStore` Hook 连接到外部 store。
-=======
-For example, in the sandbox below, `todosStore` is implemented as an external store that stores data outside of React. The `TodosApp` component connects to that external store with the `useSyncExternalStore` Hook.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 <Sandpack>
 
@@ -421,13 +417,8 @@ function ChatIndicator() {
   // ...
 }
 ```
-<<<<<<< HEAD
   
-如果重新渲染时你传一个不同的 `subscribe` 函数，React 会重新订阅你的 store。如果这造成了性能问题，因而你想避免重新订阅，就把 `subscribe` 函数移到外面：
-=======
-
-React will resubscribe to your store if you pass a different `subscribe` function between re-renders. If this causes performance issues and you'd like to avoid resubscribing, move the `subscribe` function outside:
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+如果重新渲染时你传一个不同的 `subscribe` 函数，React 会重新订阅你的 store。如果这造成了性能问题，或者你想避免重新订阅，就把 `subscribe` 函数移到外面：
 
 ```js {1-4}
 // ✅ 总是相同的函数，所以 React 不需要重新订阅
