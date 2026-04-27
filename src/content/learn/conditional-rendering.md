@@ -34,31 +34,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
+        <Item
+          isPacked={true}
           name="宇航服" 
         />
-        <Item 
-          isPacked={true} 
+        <Item
+          isPacked={true}
           name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
-        <Item
-          isPacked={true}
-          name="Space suit"
-        />
-        <Item
-          isPacked={true}
-          name="Helmet with a golden leaf"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -96,31 +82,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -162,31 +134,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -280,31 +238,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -348,31 +292,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -443,31 +373,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -503,31 +419,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -574,31 +476,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -626,31 +514,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          isPacked={true} 
-          name="宇航服" 
-        />
-        <Item 
-          isPacked={true} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Tam 的照片" 
-=======
         <Item
           isPacked={true}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片" 
         />
       </ul>
     </section>
@@ -688,31 +562,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          importance={9} 
-          name="宇航服" 
-        />
-        <Item 
-          importance={0} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          importance={6} 
-          name="Tam 的照片" 
-=======
         <Item
           importance={9}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           importance={0}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           importance={6}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -746,31 +606,17 @@ export default function PackingList() {
     <section>
       <h1>Sally Ride 的行李清单</h1>
       <ul>
-<<<<<<< HEAD
-        <Item 
-          importance={9} 
-          name="宇航服" 
-        />
-        <Item 
-          importance={0} 
-          name="带金箔的头盔" 
-        />
-        <Item 
-          importance={6} 
-          name="Tam 的照片" 
-=======
         <Item
           importance={9}
-          name="Space suit"
+          name="宇航服"
         />
         <Item
           importance={0}
-          name="Helmet with a golden leaf"
+          name="带金箔的头盔"
         />
         <Item
           importance={6}
-          name="Photo of Tam"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name="Tam 的照片"
         />
       </ul>
     </section>

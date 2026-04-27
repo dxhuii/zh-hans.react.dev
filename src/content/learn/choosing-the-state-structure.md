@@ -1823,23 +1823,13 @@ button { margin: 10px; }
 
 <Recap>
 
-<<<<<<< HEAD
 * 如果两个 state 变量总是一起更新，请考虑将它们合并为一个。
 * 仔细选择你的 state 变量，以避免创建“极难处理”的 state。
 * 用一种减少出错更新的机会的方式来构建你的 state。
 * 避免冗余和重复的 state，这样你就不需要保持同步。
-* 除非你特别想防止更新，否则不要将 props **放入** state 中。 
+* 除非你特别想防止更新，否则不要将 props **放入** state 中。
 * 对于选择类型的 UI 模式，请在 state 中保存 ID 或索引而不是对象本身。
 * 如果深度嵌套 state 更新很复杂，请尝试将其展开扁平化。
-=======
-* If two state variables always update together, consider merging them into one.
-* Choose your state variables carefully to avoid creating "impossible" states.
-* Structure your state in a way that reduces the chances that you'll make a mistake updating it.
-* Avoid redundant and duplicate state so that you don't need to keep it in sync.
-* Don't put props *into* state unless you specifically want to prevent updates.
-* For UI patterns like selection, keep ID or index in state instead of the object itself.
-* If updating deeply nested state is complicated, try flattening it.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 </Recap>
 

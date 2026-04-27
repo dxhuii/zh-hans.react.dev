@@ -293,11 +293,7 @@ button { margin-left: 10px; }
 ```js {1,3,8}
 function ChatRoom({ roomId }) { // roomId 属性可能会随时间变化。
   useEffect(() => {
-<<<<<<< HEAD
     const connection = createConnection(serverUrl, roomId); // 这个 Effect 读取了 roomId
-=======
-    const connection = createConnection(serverUrl, roomId); // This Effect reads roomId
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
     connection.connect();
     return () => {
       connection.disconnect();
@@ -1715,11 +1711,7 @@ async function fetchPlanets() {
         name: '金星'
       }, {
         id: 'mars',
-<<<<<<< HEAD
-        name: '火星'        
-=======
-        name: 'Mars'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+        name: '火星'
       }]);
     }, 1000);
   });
@@ -1743,11 +1735,7 @@ async function fetchPlaces(planetId) {
           name: '西班牙'
         }, {
           id: 'vietnam',
-<<<<<<< HEAD
-          name: '越南'        
-=======
-          name: 'Vietnam'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name: '越南'
         }]);
       } else if (planetId === 'venus') {
         resolve([{
@@ -1758,11 +1746,7 @@ async function fetchPlaces(planetId) {
           name: '戴安娜哈斯玛'
         }, {
           id: 'kumsong-vallis',
-<<<<<<< HEAD
-          name: 'Kŭmsŏng山谷'        
-=======
-          name: 'Kŭmsŏng Vallis'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name: 'Kŭmsŏng 山谷'
         }]);
       } else if (planetId === 'mars') {
         resolve([{
@@ -1895,11 +1879,7 @@ async function fetchPlanets() {
         name: '金星'
       }, {
         id: 'mars',
-<<<<<<< HEAD
-        name: '火星'        
-=======
-        name: 'Mars'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+        name: '火星'
       }]);
     }, 1000);
   });
@@ -1923,11 +1903,7 @@ async function fetchPlaces(planetId) {
           name: '西班牙'
         }, {
           id: 'vietnam',
-<<<<<<< HEAD
-          name: '越南'        
-=======
-          name: 'Vietnam'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name: '越南'
         }]);
       } else if (planetId === 'venus') {
         resolve([{
@@ -1938,11 +1914,7 @@ async function fetchPlaces(planetId) {
           name: '戴安娜哈斯玛'
         }, {
           id: 'kumsong-vallis',
-<<<<<<< HEAD
-          name: 'Kŭmsŏng山谷'        
-=======
-          name: 'Kŭmsŏng Vallis'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name: 'Kŭmsŏng 山谷'
         }]);
       } else if (planetId === 'mars') {
         resolve([{
@@ -2070,11 +2042,7 @@ async function fetchPlanets() {
         name: '金星'
       }, {
         id: 'mars',
-<<<<<<< HEAD
-        name: '火星'        
-=======
-        name: 'Mars'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+        name: '火星'
       }]);
     }, 1000);
   });
@@ -2098,11 +2066,7 @@ async function fetchPlaces(planetId) {
           name: '西班牙'
         }, {
           id: 'vietnam',
-<<<<<<< HEAD
-          name: '越南'        
-=======
-          name: 'Vietnam'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name: '越南'
         }]);
       } else if (planetId === 'venus') {
         resolve([{
@@ -2113,11 +2077,7 @@ async function fetchPlaces(planetId) {
           name: '戴安娜哈斯玛'
         }, {
           id: 'kumsong-vallis',
-<<<<<<< HEAD
-          name: 'Kŭmsŏng山谷'        
-=======
-          name: 'Kŭmsŏng Vallis'
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+          name: 'Kŭmsŏng 山谷'
         }]);
       } else if (planetId === 'mars') {
         resolve([{
