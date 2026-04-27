@@ -117,8 +117,13 @@ const people = [{
   profession: '物理学家',
 }, {
   id: 3,
+<<<<<<< HEAD
   name: '珀西·莱温·朱利亚',
   profession: '化学家',
+=======
+  name: 'Percy Lavon Julian',
+  profession: 'chemist',
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 }, {
   id: 4,
   name: '苏布拉马尼扬·钱德拉塞卡',
@@ -232,7 +237,7 @@ export const people = [
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     's.jpg'
   );
@@ -241,9 +246,9 @@ export function getImageUrl(person) {
 
 ```css
 ul { list-style-type: none; padding: 0px 10px; }
-li { 
-  margin-bottom: 10px; 
-  display: grid; 
+li {
+  margin-bottom: 10px;
+  display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
   align-items: center;
@@ -368,7 +373,7 @@ export const people = [
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     's.jpg'
   );
@@ -377,9 +382,9 @@ export function getImageUrl(person) {
 
 ```css
 ul { list-style-type: none; padding: 0px 10px; }
-li { 
-  margin-bottom: 10px; 
-  display: grid; 
+li {
+  margin-bottom: 10px;
+  display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
   align-items: center;
@@ -535,7 +540,7 @@ export const people = [
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     's.jpg'
   );
@@ -656,7 +661,7 @@ export const people = [
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     's.jpg'
   );
@@ -776,7 +781,7 @@ export const people = [
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     's.jpg'
   );
@@ -900,7 +905,7 @@ export const people = [
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     's.jpg'
   );

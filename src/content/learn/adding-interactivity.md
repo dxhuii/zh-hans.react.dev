@@ -138,6 +138,7 @@ export default function Gallery() {
 export const sculptureList = [{
   name: 'Homenaje a la Neurocirugía',
   artist: 'Marta Colvin Andrade',
+<<<<<<< HEAD
   description: '尽管 Colvin 以暗示前西班牙符号的抽象主题而闻名，但这座巨大的雕塑是对神经外科的致敬，是她最知名的公共艺术作品之一。',
   url: 'https://i.imgur.com/Mx7dA2Y.jpg',
   alt: '一尊双手交叉的青铜雕像，它的手指优雅地握住一个人类的大脑。'
@@ -158,10 +159,33 @@ export const sculptureList = [{
   artist: 'Unknown Artist',
   description: '在复活节岛上，有 1000 个石像，或现存的纪念碑雕像，由早期的拉帕努伊人创造，一些人认为代表神化的祖先。',
   url: 'https://i.imgur.com/RCwLEoQm.jpg',
+=======
+  description: 'Although Colvin is predominantly known for abstract themes that allude to pre-Hispanic symbols, this gigantic sculpture, an homage to neurosurgery, is one of her most recognizable public art pieces.',
+  url: 'https://react.dev/images/docs/scientists/Mx7dA2Y.jpg',
+  alt: 'A bronze statue of two crossed hands delicately holding a human brain in their fingertips.'
+}, {
+  name: 'Floralis Genérica',
+  artist: 'Eduardo Catalano',
+  description: 'This enormous (75 ft. or 23m) silver flower is located in Buenos Aires. It is designed to move, closing its petals in the evening or when strong winds blow and opening them in the morning.',
+  url: 'https://react.dev/images/docs/scientists/ZF6s192m.jpg',
+  alt: 'A gigantic metallic flower sculpture with reflective mirror-like petals and strong stamens.'
+}, {
+  name: 'Eternal Presence',
+  artist: 'John Woodrow Wilson',
+  description: 'Wilson was known for his preoccupation with equality, social justice, as well as the essential and spiritual qualities of humankind. This massive (7ft. or 2,13m) bronze represents what he described as "a symbolic Black presence infused with a sense of universal humanity."',
+  url: 'https://react.dev/images/docs/scientists/aTtVpES.jpg',
+  alt: 'The sculpture depicting a human head seems ever-present and solemn. It radiates calm and serenity.'
+}, {
+  name: 'Moai',
+  artist: 'Unknown Artist',
+  description: 'Located on the Easter Island, there are 1,000 moai, or extant monumental statues, created by the early Rapa Nui people, which some believe represented deified ancestors.',
+  url: 'https://react.dev/images/docs/scientists/RCwLEoQm.jpg',
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
   alt: 'Three monumental stone busts with the heads that are disproportionately large with somber faces.'
 }, {
   name: 'Blue Nana',
   artist: 'Niki de Saint Phalle',
+<<<<<<< HEAD
   description: 'Nana 是一群自信奔放的人，也是女性气质和母性的象征。最初，Saint Phalle 使用布料和废弃物品来创作 Nana，后来又引入合成树脂以实现更具活力的效果。',
   url: 'https://i.imgur.com/Sd1AgUOm.jpg',
   alt: '这是一件大型马赛克雕塑，展现了一个穿着绚丽服装、欢快舞蹈的女性形象，充满了喜悦和活力。'
@@ -170,10 +194,21 @@ export const sculptureList = [{
   artist: 'Barbara Hepworth',
   description: '这座抽象的青铜雕塑是位于约克郡雕塑公园的《人类家族》系列的一部分。Hepworth 选择的不是创造世界的文字表现，而是受到人和景观的启发而发展出抽象的形式。',
   url: 'https://i.imgur.com/2heNQDcm.jpg',
+=======
+  description: 'The Nanas are triumphant creatures, symbols of femininity and maternity. Initially, Saint Phalle used fabric and found objects for the Nanas, and later on introduced polyester to achieve a more vibrant effect.',
+  url: 'https://react.dev/images/docs/scientists/Sd1AgUOm.jpg',
+  alt: 'A large mosaic sculpture of a whimsical dancing female figure in a colorful costume emanating joy.'
+}, {
+  name: 'Ultimate Form',
+  artist: 'Barbara Hepworth',
+  description: 'This abstract bronze sculpture is a part of The Family of Man series located at Yorkshire Sculpture Park. Hepworth chose not to create literal representations of the world but developed abstract forms inspired by people and landscapes.',
+  url: 'https://react.dev/images/docs/scientists/2heNQDcm.jpg',
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
   alt: 'A tall sculpture made of three elements stacked on each other reminding of a human figure.'
 }, {
   name: 'Cavaliere',
   artist: 'Lamidi Olonade Fakeye',
+<<<<<<< HEAD
   description: "法基是四代木雕家的后代，他的作品融合了传统和当代约鲁巴主题。",
   url: 'https://i.imgur.com/wIdGuZwm.png',
   alt: '一个复杂的木制战士雕塑，马背上有一张严肃的脸，脸上装饰着图案。'
@@ -207,6 +242,41 @@ export const sculptureList = [{
   description: '台北动物园委托建造了河马广场，以水下河马为特色。',
   url: 'https://i.imgur.com/6o5Vuyu.jpg',
   alt: '一组青铜河马雕塑从露台的人行道上出现，好像他们在游泳。'
+=======
+  description: "Descended from four generations of woodcarvers, Fakeye's work blended traditional and contemporary Yoruba themes.",
+  url: 'https://react.dev/images/docs/scientists/wIdGuZwm.png',
+  alt: 'An intricate wood sculpture of a warrior with a focused face on a horse adorned with patterns.'
+}, {
+  name: 'Big Bellies',
+  artist: 'Alina Szapocznikow',
+  description: "Szapocznikow is known for her sculptures of the fragmented body as a metaphor for the fragility and impermanence of youth and beauty. This sculpture depicts two very realistic large bellies stacked on top of each other, each around five feet (1,5m) tall.",
+  url: 'https://react.dev/images/docs/scientists/AlHTAdDm.jpg',
+  alt: 'The sculpture reminds a cascade of folds, quite different from bellies in classical sculptures.'
+}, {
+  name: 'Terracotta Army',
+  artist: 'Unknown Artist',
+  description: 'The Terracotta Army is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first Emperor of China. The army consisted of more than 8,000 soldiers, 130 chariots with 520 horses, and 150 cavalry horses.',
+  url: 'https://react.dev/images/docs/scientists/HMFmH6m.jpg',
+  alt: '12 terracotta sculptures of solemn warriors, each with a unique facial expression and armor.'
+}, {
+  name: 'Lunar Landscape',
+  artist: 'Louise Nevelson',
+  description: 'Nevelson was known for scavenging objects from New York City debris, which she would later assemble into monumental constructions. In this one, she used disparate parts like a bedpost, juggling pin, and seat fragment, nailing and gluing them into boxes that reflect the influence of Cubism’s geometric abstraction of space and form.',
+  url: 'https://react.dev/images/docs/scientists/rN7hY6om.jpg',
+  alt: 'A black matte sculpture where the individual elements are initially indistinguishable.'
+}, {
+  name: 'Aureole',
+  artist: 'Ranjani Shettar',
+  description: 'Shettar merges the traditional and the modern, the natural and the industrial. Her art focuses on the relationship between man and nature. Her work was described as compelling both abstractly and figuratively, gravity defying, and a "fine synthesis of unlikely materials."',
+  url: 'https://react.dev/images/docs/scientists/okTpbHhm.jpg',
+  alt: 'A pale wire-like sculpture mounted on concrete wall and descending on the floor. It appears light.'
+}, {
+  name: 'Hippos',
+  artist: 'Taipei Zoo',
+  description: 'The Taipei Zoo commissioned a Hippo Square featuring submerged hippos at play.',
+  url: 'https://react.dev/images/docs/scientists/6o5Vuyu.jpg',
+  alt: 'A group of bronze hippo sculptures emerging from the sett sidewalk as if they were swimming.'
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 }];
 ```
 
@@ -423,7 +493,7 @@ export default function Form() {
     artwork: {
       title: 'Blue Nana',
       city: 'Hamburg',
-      image: 'https://i.imgur.com/Sd1AgUOm.jpg',
+      image: 'https://react.dev/images/docs/scientists/Sd1AgUOm.jpg',
     }
   });
 
@@ -531,7 +601,7 @@ export default function Form() {
     artwork: {
       title: 'Blue Nana',
       city: 'Hamburg',
-      image: 'https://i.imgur.com/Sd1AgUOm.jpg',
+      image: 'https://react.dev/images/docs/scientists/Sd1AgUOm.jpg',
     }
   });
 

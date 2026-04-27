@@ -67,7 +67,7 @@ React 允许你将标签、CSS 和 JavaScript 组合成自定义“组件”，�
 export default function Profile() {
   return (
     <img
-      src="https://i.imgur.com/MK3eW3Am.jpg"
+      src="https://react.dev/images/docs/scientists/MK3eW3Am.jpg"
       alt="Katherine Johnson"
     />
   )
@@ -103,7 +103,7 @@ React 组件是常规的 JavaScript 函数，但 **组件的名称必须以大�
 返回语句可以全写在一行上，如下面组件中所示：
 
 ```js
-return <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />;
+return <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />;
 ```
 
 但是，如果你的标签和 `return` 关键字不在同一行，则必须把它包裹在一对括号中，如下所示：
@@ -111,7 +111,7 @@ return <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />;
 ```js
 return (
   <div>
-    <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+    <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
   </div>
 );
 ```
@@ -132,7 +132,7 @@ return (
 function Profile() {
   return (
     <img
-      src="https://i.imgur.com/MK3eW3As.jpg"
+      src="https://react.dev/images/docs/scientists/MK3eW3As.jpg"
       alt="Katherine Johnson"
     />
   );
@@ -167,10 +167,17 @@ img { margin: 0 10px 10px 0; height: 90px; }
 
 ```html
 <section>
+<<<<<<< HEAD
   <h1>了不起的科学家</h1>
   <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
   <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
   <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+=======
+  <h1>Amazing scientists</h1>
+  <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
+  <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
+  <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 </section>
 ```
 
@@ -252,7 +259,7 @@ function Profile() {
 function Profile() {
   return (
     <img
-      src="https://i.imgur.com/lICfvbD.jpg"
+      src="https://react.dev/images/docs/scientists/lICfvbD.jpg"
       alt="Aklilu Lemma"
     />
   );
@@ -277,7 +284,7 @@ img { height: 181px; }
 export default function Profile() {
   return (
     <img
-      src="https://i.imgur.com/lICfvbD.jpg"
+      src="https://react.dev/images/docs/scientists/lICfvbD.jpg"
       alt="Aklilu Lemma"
     />
   );
@@ -310,7 +317,7 @@ img { height: 181px; }
 ```js
 export default function Profile() {
   return
-    <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
+    <img src="https://react.dev/images/docs/scientists/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
 }
 ```
 
@@ -328,7 +335,7 @@ img { height: 180px; }
 
 ```js
 export default function Profile() {
-  return <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
+  return <img src="https://react.dev/images/docs/scientists/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
 }
 ```
 
@@ -345,9 +352,9 @@ img { height: 180px; }
 ```js
 export default function Profile() {
   return (
-    <img 
-      src="https://i.imgur.com/jA8hHMpm.jpg" 
-      alt="Katsuko Saruhashi" 
+    <img
+      src="https://react.dev/images/docs/scientists/jA8hHMpm.jpg"
+      alt="Katsuko Saruhashi"
     />
   );
 }
@@ -371,7 +378,7 @@ img { height: 180px; }
 function profile() {
   return (
     <img
-      src="https://i.imgur.com/QIrZWGIs.jpg"
+      src="https://react.dev/images/docs/scientists/QIrZWGIs.jpg"
       alt="Alan L. Hart"
     />
   );
@@ -407,7 +414,7 @@ React 组件名字必须以大写字母开头。
 function Profile() {
   return (
     <img
-      src="https://i.imgur.com/QIrZWGIs.jpg"
+      src="https://react.dev/images/docs/scientists/QIrZWGIs.jpg"
       alt="Alan L. Hart"
     />
   );

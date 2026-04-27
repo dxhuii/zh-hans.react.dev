@@ -64,7 +64,7 @@ import { use } from 'react';
 
 function Button() {
   const theme = use(ThemeContext);
-  // ... 
+  // ...
 ```
 
 `use` 返回传递的 <CodeStep step={1}>context</CodeStep> 的 <CodeStep step={2}>context 值</CodeStep>。React 会搜索组件树并找到 **最接近的 context provider** 以确定需要返回的 context 值。
@@ -456,7 +456,11 @@ function MessageComponent({messagePromise}) {
 
 ```jsx
 function MessageComponent({messagePromise}) {
+<<<<<<< HEAD
   // ✅ `use` 正在组件内被调用
+=======
+  // ✅ `use` is being called from a component.
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
   const message = use(messagePromise);
   // ...
 ```
