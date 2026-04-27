@@ -96,7 +96,7 @@ import Counter from './Counter';
 it('can render and update a counter', async () => {
   container = document.createElement('div');
   document.body.appendChild(container);
-  
+
   // ✅ 在 act() 内渲染组件
   await act(() => {
     ReactDOMClient.createRoot(container).render(<Counter />);
@@ -129,7 +129,7 @@ it.only('can render and update a counter', async () => {
   await act( async () => {
     ReactDOMClient.createRoot(container).render(<Counter />);
   });
-  
+
   // ✅ 在 act() 内触发事件
   await act(async () => {
     button.dispatchEvent(new MouseEvent('click', { bubbles: true }));

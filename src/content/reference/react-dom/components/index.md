@@ -170,7 +170,7 @@ React 支持所有浏览器内置的组件，包括：
 
 自定义元素有两种数据传递方法：
 
-1) Attributes：显示在标记中，只能设置为字符串值 
+1) Attributes：显示在标记中，只能设置为字符串值
 2) Properties：不在标记中显示，可设置为任意 JavaScript 值
 
 默认情况下，React 会将 JSX 中绑定的值作为 attributes 传递：

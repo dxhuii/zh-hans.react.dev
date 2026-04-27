@@ -26,8 +26,8 @@ React 文档由 [React 团队](/community/team) 和 [外部贡献者](https://gi
 
 * [Dan Lebowitz](https://twitter.com/lebo)：站点设计
 * [Razvan Gradinar](https://dribbble.com/GradinarRazvan)：沙箱设计
-* [Maggie Appleton](https://maggieappleton.com/)：图表系统 
-* [Sophie Alpert](https://twitter.com/sophiebits)：多彩的代码解释 
+* [Maggie Appleton](https://maggieappleton.com/)：图表系统
+* [Sophie Alpert](https://twitter.com/sophiebits)：多彩的代码解释
 
 ## 开发 {/*development*/}
 

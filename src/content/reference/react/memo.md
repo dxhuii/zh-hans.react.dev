@@ -391,7 +391,7 @@ function Parent() {
   );
 }
 
-// 没有 memo，即使 props 没有变化，每秒也会重新渲染一次 
+// 没有 memo，即使 props 没有变化，每秒也会重新渲染一次
 const ExpensiveChild = memo(function ExpensiveChild({ name }) {
   console.log('ExpensiveChild rendered');
   return <div>Hello, {name}!</div>;
@@ -401,7 +401,7 @@ const ExpensiveChild = memo(function ExpensiveChild({ name }) {
 **启用 React 编译器** 后，相同的优化会自动发生：
 
 ```js
-// 无需 memo - 编译器会自动阻止重新渲染 
+// 无需 memo - 编译器会自动阻止重新渲染
 function ExpensiveChild({ name }) {
   console.log('ExpensiveChild rendered');
   return <div>Hello, {name}!</div>;

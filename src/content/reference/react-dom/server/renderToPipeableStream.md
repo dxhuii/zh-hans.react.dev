@@ -49,7 +49,7 @@ const { pipe } = renderToPipeableStream(<App />, {
 * `reactNode`：想要将其渲染为 HTML 的 React 节点，比如像 `<App />` 这样的 JSX 元素。这样做意味着整个页面文档都将被渲染，所以这里提到的 `App` 组件将渲染 `<html>` 标签.
 
 * **可选** `options`：用于配置流的对象.
-  * **可选** `bootstrapScriptContent`：指定一个字符串，这个字符串将被放入 `<script>` 标签中作为其内容。 
+  * **可选** `bootstrapScriptContent`：指定一个字符串，这个字符串将被放入 `<script>` 标签中作为其内容。
   * **可选** `bootstrapScripts`：一个 URL 字符串数组，它们将被转化为 `<script>` 标签嵌入页面。请将那些调用了 [`hydrateRoot`](/reference/react-dom/client/hydrateRoot) 的 `<script>` 对应的 URL 放入这个数组中。但是如果你不想让客户都端运行 React 的话，请省略这个参数。
   * **可选** `bootstrapModules`：和 `bootstrapScripts` 相似，但是嵌入页面的是 [`<script type="module">`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Modules)。
   * **可选** `identifierPrefix`：一个字符串前缀，用于由 [`useId`](/reference/react/useId) 生成的 id。在同一页面下的多人协作场景中会很有用，它能够很好地避免命名冲突。但是注意使用 [`hydrateRoot`](/reference/react-dom/client/hydrateRoot#parameters) 时也要加上同样的前缀。
@@ -368,7 +368,7 @@ const { pipe } = renderToPipeableStream(<App />, {
 });
 ```
 
-如果你提供了一个自定义的 `onError` 实现，记得总是应该像上面这样在控制台打印错误日志。 
+如果你提供了一个自定义的 `onError` 实现，记得总是应该像上面这样在控制台打印错误日志。
 
 ---
 

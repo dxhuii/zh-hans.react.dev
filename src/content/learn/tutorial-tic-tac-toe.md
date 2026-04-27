@@ -2078,7 +2078,7 @@ export default function Game() {
 <ConsoleBlock level="warning">
 Warning: Each child in an array or iterator should have a unique "key" prop. Check the render method of &#96;Game&#96;.
 </ConsoleBlock>
-  
+
 你将在下一节中修复此错误。
 
 <Sandpack>

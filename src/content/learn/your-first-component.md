@@ -338,7 +338,7 @@ img { height: 180px; }
 
 </Sandpack>
 
-或者用括号包裹返回的 JSX 标签，将左括号放在 `return` 的后面： 
+或者用括号包裹返回的 JSX 标签，将左括号放在 `return` 的后面：
 
 <Sandpack>
 

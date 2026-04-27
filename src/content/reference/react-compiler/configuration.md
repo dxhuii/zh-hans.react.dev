@@ -20,7 +20,7 @@ module.exports = {
   plugins: [
     [
       'babel-plugin-react-compiler', {
-        // 编译选项 
+        // 编译选项
       }
     ]
   ]

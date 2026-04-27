@@ -1,6 +1,6 @@
 ---
 title: 将 Props 传递给组件
-translators: 
+translators:
   - SylviaZ89
   - rottenpen
 ---
@@ -16,7 +16,7 @@ React 组件使用 *props* 来互相通信。每个父组件都可以提供 prop
 * 如何向组件传递 props
 * 如何从组件读取 props
 * 如何为 props 指定默认值
-* 如何给组件传递 JSX 
+* 如何给组件传递 JSX
 * Props 如何随时间变化
 
 </YouWillLearn>

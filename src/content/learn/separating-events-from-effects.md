@@ -10,7 +10,7 @@ title: 将事件从 Effect 中分开
 
 <YouWillLearn>
 
-- 怎么在事件处理函数和 Effect 之间做选择 
+- 怎么在事件处理函数和 Effect 之间做选择
 - 为什么 Effect 是响应式的，而事件处理函数不是
 - 当你想要 Effect 的部分代码变成非响应式时要做些什么
 - Effect Event 是什么，以及怎么从 Effect 中提取

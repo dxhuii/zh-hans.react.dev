@@ -36,15 +36,15 @@ export default function PackingList() {
       <ul>
         <Item
           isPacked={true}
-          name="宇航服" 
+          name="宇航服"
         />
         <Item
           isPacked={true}
-          name="带金箔的头盔" 
+          name="带金箔的头盔"
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -92,7 +92,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -144,7 +144,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -248,7 +248,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -302,7 +302,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -383,7 +383,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -429,7 +429,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -486,7 +486,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>
@@ -524,7 +524,7 @@ export default function PackingList() {
         />
         <Item
           isPacked={false}
-          name="Tam 的照片" 
+          name="Tam 的照片"
         />
       </ul>
     </section>

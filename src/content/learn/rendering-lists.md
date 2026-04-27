@@ -726,7 +726,7 @@ export default function List() {
       />
       <ListSection
       title="其余的人"
-      people={everyoneElse} 
+      people={everyoneElse}
       />
     </article>
   );

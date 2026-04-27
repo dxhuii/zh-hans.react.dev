@@ -31,7 +31,7 @@ const {prelude, postponed} = await prerenderToNodeStream(reactNode, options?)
 ```js
 import { prerenderToNodeStream } from 'react-dom/static';
 
-// 路由处理的语法取决于后端框架 
+// 路由处理的语法取决于后端框架
 app.use('/', async (request, response) => {
   const { prelude } = await prerenderToNodeStream(<App />, {
     bootstrapScripts: ['/main.js'],

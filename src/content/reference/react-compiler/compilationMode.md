@@ -37,7 +37,7 @@ title: compilationMode
 #### 选项 {/*options*/}
 
 - **`'infer'`**（默认值）：编译器使用智能的启发式方法来识别 React 组件和 Hook：
-  - 明确使用 `"use memo"` 指令注释的函数 
+  - 明确使用 `"use memo"` 指令注释的函数
   - 命名类似组件（PascalCase）或 Hook（`use` 前缀）并且创建了 JSX 和/或调用了其他 Hook 的函数
 
 - **`'annotation'`**：仅编译使用 `"use memo"` 指示符明确标记的函数。是增量采用的理想选择。

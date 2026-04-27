@@ -215,7 +215,7 @@ li {
 
 另一种解决方案是**将函数传递给 `ref` 属性**。这称为 [`ref` 回调](/reference/react-dom/components/common#ref-callback)。当需要设置 ref 时，React 将传入 DOM 节点来调用你的 ref 回调，并在需要清除它时传入 `null` 。这使你可以维护自己的数组或 [Map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)，并通过其索引或某种类型的 ID 访问任何 ref。
 
-此示例展示了如何使用此方法滚动到长列表中的任意节点： 
+此示例展示了如何使用此方法滚动到长列表中的任意节点：
 
 <Sandpack>
 

@@ -267,7 +267,7 @@ title: "普通组件（例如 <div>）"
 
 <Note>
 
-#### React 19 添加了 `ref` 回调的清理函数。{/*react-19-added-cleanup-functions-for-ref-callbacks*/}
+#### React 19 添加了 `ref` 回调的清理函数。 {/*react-19-added-cleanup-functions-for-ref-callbacks*/}
 
 为了向后兼容，如果 `ref` 回调未返回清理函数，当 `ref` 被分离时 `node` 会被作为 `null` 传递。此行为将在未来版本中删除。
 
@@ -454,7 +454,7 @@ React 事件对象实现了一些标准的 [`Event`](https://developer.mozilla.o
 ### `FocusEvent` 处理函数 {/*focusevent-handler*/}
 
  一个用于焦点事件的事件处理程序类型。
- 
+
 ```js
 <input
   onFocus={e => console.log('onFocus')}

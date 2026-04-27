@@ -90,7 +90,7 @@ label {
 
 </Sandpack>
 
-下面是它们的树形结构的样子：   
+下面是它们的树形结构的样子：
 
 <DiagramGroup>
 

@@ -93,7 +93,7 @@ async function handler(request) {
 }
 ```
 
-除了 <CodeStep step={1}>根组件</CodeStep>，你还需要提供 <CodeStep step={2}>启动 `<script>` 路由</CodeStep> 列表，你的根组件应该返回 **包括根 `<html>` 标签的整个 document** 
+除了 <CodeStep step={1}>根组件</CodeStep>，你还需要提供 <CodeStep step={2}>启动 `<script>` 路由</CodeStep> 列表，你的根组件应该返回 **包括根 `<html>` 标签的整个 document**
 
 例如，它可能是这样的：
 

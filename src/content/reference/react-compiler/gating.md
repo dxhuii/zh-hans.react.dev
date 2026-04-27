@@ -90,8 +90,8 @@ function Button(props) {
 import { shouldUseCompiler } from './src/utils/feature-flags';
 
 const Button = shouldUseCompiler()
-  ? function Button_optimized(props) { /* 编译后的版本 */ } 
-  : function Button_original(props) { /* 源版本 */ }; 
+  ? function Button_optimized(props) { /* 编译后的版本 */ }
+  : function Button_original(props) { /* 源版本 */ };
 ```
 
 注意，gating 函数在模块加载时只会执行一次，因此一旦 JS 包被解析并执行，组件的选择将在本次浏览器会话的剩余时间内保持不变。

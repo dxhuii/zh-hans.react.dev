@@ -417,7 +417,7 @@ function ChatIndicator() {
   // ...
 }
 ```
-  
+
 如果重新渲染时你传一个不同的 `subscribe` 函数，React 会重新订阅你的 store。如果这造成了性能问题，或者你想避免重新订阅，就把 `subscribe` 函数移到外面：
 
 ```js {1-4}

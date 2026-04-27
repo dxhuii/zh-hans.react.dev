@@ -102,7 +102,7 @@ function VideoPlayer({ src, isPlaying }) {
   const ref = useRef(null);
 
   if (isPlaying) {
-    ref.current.play();  // 渲染期间不能调用 `play()`。 
+    ref.current.play();  // 渲染期间不能调用 `play()`。
   } else {
     ref.current.pause(); // 同样，调用 `pause()` 也不行。
   }
@@ -1005,7 +1005,7 @@ export default function MyInput({ value, onChange }) {
   const ref = useRef(null);
 
   // TODO：下面的这种做法不会生效，请修复。
-  // ref.current.focus()    
+  // ref.current.focus()
 
   return (
     <input

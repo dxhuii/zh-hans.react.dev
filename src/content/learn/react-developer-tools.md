@@ -43,7 +43,7 @@ npm install -g react-devtools
 react-devtools
 ```
 
-然后通过将以下 `<script>` 标签添加到你网站的 `<head>` 开头来连接你的网站： 
+然后通过将以下 `<script>` 标签添加到你网站的 `<head>` 开头来连接你的网站：
 ```html {3}
 <html>
   <head>

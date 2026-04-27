@@ -45,7 +45,7 @@ function ChatRoom({ roomId }) {
 #### 参数 {/*parameters*/}
 
 * `setup`：处理 Effect 的函数。setup 函数选择性返回一个 **清理（cleanup）** 函数。当 [组件提交的时候](/learn/render-and-commit#step-3-react-commits-changes-to-the-dom)，React 会运行 setup 函数。在每次提交导致依赖项变更后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
- 
+
 * **可选** `dependencies`：`setup` 代码中引用的所有响应式值的列表。响应式值包括 props、state 以及所有直接在组件内部声明的变量和函数。如果你的代码检查工具 [配置了 React](/learn/editor-setup#linting)，那么它将验证是否每个响应式值都被正确地指定为一个依赖项。依赖项列表的元素数量必须是固定的，并且必须像 `[dep1, dep2, dep3]` 这样内联编写。React 将使用 [`Object.is`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is) 来比较每个依赖项和它先前的值。如果省略此参数，则在每次组件提交更改之后，将重新运行 Effect 函数。如果你想了解更多，请参见 [传递依赖数组、空数组和不传递依赖项之间的区别](#examples-dependencies)。
 
 #### 返回值 {/*returns*/}
@@ -504,7 +504,7 @@ export default function Box() {
 
 ### 在自定义 Hook 中封装 Effect {/*wrapping-effects-in-custom-hooks*/}
 
-Effect 是一种 [脱围机制](/learn/escape-hatches)：当你需要“走出 React 之外”或者当你的使用场景没有更好的内置解决方案时，你可以使用它们。如果你发现自己经常需要手动编写 Effect，那么这通常表明你需要为组件所依赖的通用行为提取一些 [自定义 Hook](/learn/reusing-logic-with-custom-hooks)。 
+Effect 是一种 [脱围机制](/learn/escape-hatches)：当你需要“走出 React 之外”或者当你的使用场景没有更好的内置解决方案时，你可以使用它们。如果你发现自己经常需要手动编写 Effect，那么这通常表明你需要为组件所依赖的通用行为提取一些 [自定义 Hook](/learn/reusing-logic-with-custom-hooks)。
 
 例如，这个 `useChatRoom` 自定义 Hook 把 Effect 的逻辑“隐藏”在一个更具声明性的 API 之后：
 
@@ -1685,7 +1685,7 @@ button { margin-left: 10px; }
 
 </Sandpack>
 
-现在你在 Effect 内部定义了 `createOptions` 函数，这样 Effect 本身只依赖于 `roomId` 字符串。通过此修复，输入框的输入不会重新连接聊天室。与被重新创建的函数不同，像 `roomId` 这样的字符串除非你将其设置为其它值，否则它不会改变。[了解更多有关移除依赖项的信息](/learn/removing-effect-dependencies)。 
+现在你在 Effect 内部定义了 `createOptions` 函数，这样 Effect 本身只依赖于 `roomId` 字符串。通过此修复，输入框的输入不会重新连接聊天室。与被重新创建的函数不同，像 `roomId` 这样的字符串除非你将其设置为其它值，否则它不会改变。[了解更多有关移除依赖项的信息](/learn/removing-effect-dependencies)。
 
 ---
 
