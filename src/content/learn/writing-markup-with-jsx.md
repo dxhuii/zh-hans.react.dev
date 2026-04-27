@@ -74,17 +74,10 @@ JavaScript
 假设你现在有一些（完全有效的）HTML 标签：
 
 ```html
-<<<<<<< HEAD
 <h1>海蒂·拉玛的待办事项</h1>
-<img 
-  src="https://i.imgur.com/yXOvdOSs.jpg" 
-  alt="Hedy Lamarr" 
-=======
-<h1>Hedy Lamarr's Todos</h1>
 <img
   src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
   alt="Hedy Lamarr"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
   class="photo"
 >
 <ul>
@@ -112,19 +105,11 @@ export default function TodoList() {
 ```js
 export default function TodoList() {
   return (
-<<<<<<< HEAD
     // 这不起作用！
     <h1>海蒂·拉玛的待办事项</h1>
-    <img 
-      src="https://i.imgur.com/yXOvdOSs.jpg" 
-      alt="Hedy Lamarr" 
-=======
-    // This doesn't quite work!
-    <h1>Hedy Lamarr's Todos</h1>
     <img
       src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
       alt="Hedy Lamarr"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
       class="photo"
     >
     <ul>
@@ -160,17 +145,10 @@ img { height: 90px }
 
 ```js {1,11}
 <div>
-<<<<<<< HEAD
   <h1>海蒂·拉玛的待办事项</h1>
-  <img 
-    src="https://i.imgur.com/yXOvdOSs.jpg" 
-    alt="Hedy Lamarr" 
-=======
-  <h1>Hedy Lamarr's Todos</h1>
   <img
     src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
     alt="Hedy Lamarr"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
     class="photo"
   >
   <ul>
@@ -184,17 +162,10 @@ img { height: 90px }
 
 ```js {1,11}
 <>
-<<<<<<< HEAD
   <h1>海蒂·拉玛的待办事项</h1>
-  <img 
-    src="https://i.imgur.com/yXOvdOSs.jpg" 
-    alt="Hedy Lamarr" 
-=======
-  <h1>Hedy Lamarr's Todos</h1>
   <img
     src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
     alt="Hedy Lamarr"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
     class="photo"
   >
   <ul>
@@ -268,19 +239,11 @@ JSX 最终会被转化为 JavaScript，而 JSX 中的属性也会变成 JavaScri
 export default function TodoList() {
   return (
     <>
-<<<<<<< HEAD
       <h1>海蒂·拉玛的待办事项</h1>
-      <img 
-        src="https://i.imgur.com/yXOvdOSs.jpg" 
-        alt="Hedy Lamarr" 
-        className="photo" 
-=======
-      <h1>Hedy Lamarr's Todos</h1>
       <img
         src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
         alt="Hedy Lamarr"
         className="photo"
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
       />
       <ul>
         <li>发明一种新式交通信号灯</li>

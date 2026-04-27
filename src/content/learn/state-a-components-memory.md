@@ -365,11 +365,7 @@ const [index, setIndex] = useState(0);
 
 </Note>
 
-<<<<<<< HEAD
-`useState` 的唯一参数是 state 变量的**初始值**。在这个例子中，`index` 的初始值被`useState(0)`设置为 `0`。
-=======
-The only argument to `useState` is the **initial value** of your state variable. In this example, the `index`'s initial value is set to `0` with `useState(0)`.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+`useState` 的唯一参数是 state 变量的 **初始值**。在这个例子中，`index` 的初始值被 `useState(0)` 设置为 `0`。
 
 每次你的组件渲染时，`useState` 都会给你一个包含两个值的数组：
 
@@ -1455,11 +1451,7 @@ export default function FeedbackForm() {
 
 尝试移动第二个 `useState` 调用到 `if` 条件之后，并要注意这会如何再次破坏它。
 
-<<<<<<< HEAD
-通常，以上类型的错误都会由 [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) linter 规则捕获。如果在本地调试错误代码时没有看到错误，则需要在构建工具的配置文件中进行设置。
-=======
-If your linter is [configured for React](/learn/editor-setup#linting), you should see a lint error when you make a mistake like this. If you don't see an error when you try the faulty code locally, you need to set up linting for your project.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
+如果你的 linter 已经 [针对 React 进行配置](/learn/editor-setup#linting)，当你犯了和上面类似的错误时，应该可以看到一个 lint 错误。如果在本地调试错误代码时没有看到错误，你需要在项目中进行配置。
 
 </Solution>
 

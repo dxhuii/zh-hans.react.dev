@@ -300,11 +300,7 @@ setPerson({
 });
 ```
 
-<<<<<<< HEAD
 现在表单可以正常运行了！
-=======
-Now the form works!
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 可以看到，你并没有为每个输入框单独声明一个 state。对于大型表单，将所有数据都存放在同一个对象中是非常方便的——前提是你能够正确地更新它！
 
@@ -381,11 +377,7 @@ input { margin-left: 5px; margin-bottom: 5px; }
 
 </Sandpack>
 
-<<<<<<< HEAD
 请注意 `...` 展开语法本质是是“浅拷贝”——它只会复制一层。这使得它的执行速度很快，但是也意味着当你想要更新一个嵌套属性时，你必须得多次使用展开语法。
-=======
-Note that the `...` spread syntax is "shallow"--it only copies things one level deep. This makes it fast, but it also means that if you want to update a nested property, you'll have to use it more than once.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 <DeepDive>
 

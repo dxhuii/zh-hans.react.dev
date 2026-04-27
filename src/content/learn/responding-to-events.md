@@ -174,11 +174,7 @@ button { margin-right: 10px; }
 
 ### 将事件处理函数作为 props 传递 {/*passing-event-handlers-as-props*/}
 
-<<<<<<< HEAD
 通常，我们会在父组件中定义子组件的事件处理函数。比如：置于不同位置的 `Button` 组件，可能最终执行的功能也不同 —— 也许是播放电影，也许是上传图片。
-=======
-Often you'll want the parent component to specify a child's event handler. Consider buttons: depending on where you're using a `Button` component, you might want to execute a different function—perhaps one plays a movie and another uploads an image.
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 为此，将组件从父组件接收的 prop 作为事件处理函数传递，如下所示：
 

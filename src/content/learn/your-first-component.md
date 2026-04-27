@@ -167,17 +167,10 @@ img { margin: 0 10px 10px 0; height: 90px; }
 
 ```html
 <section>
-<<<<<<< HEAD
   <h1>了不起的科学家</h1>
-  <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
-  <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
-  <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
-=======
-  <h1>Amazing scientists</h1>
   <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
   <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
   <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg" alt="Katherine Johnson" />
->>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 </section>
 ```
 
