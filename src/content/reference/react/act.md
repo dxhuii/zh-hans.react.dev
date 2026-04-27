@@ -96,12 +96,12 @@ import Counter from './Counter';
 it('can render and update a counter', async () => {
   container = document.createElement('div');
   document.body.appendChild(container);
-  
+
   // ✅ 在 act() 内渲染组件
   await act(() => {
     ReactDOMClient.createRoot(container).render(<Counter />);
   });
-  
+
   const button = container.querySelector('button');
   const label = container.querySelector('p');
   expect(label.textContent).toBe('You clicked 0 times');
@@ -125,11 +125,11 @@ import Counter from './Counter';
 it.only('can render and update a counter', async () => {
   const container = document.createElement('div');
   document.body.appendChild(container);
-  
+
   await act( async () => {
     ReactDOMClient.createRoot(container).render(<Counter />);
   });
-  
+
   // ✅ 在 act() 内触发事件
   await act(async () => {
     button.dispatchEvent(new MouseEvent('click', { bubbles: true }));

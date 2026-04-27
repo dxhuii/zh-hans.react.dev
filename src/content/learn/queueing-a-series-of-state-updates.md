@@ -1,6 +1,6 @@
 ---
 title: 把一系列 state 更新加入队列
-translators: 
+translators:
   - Jiacheng787
   - Neo42
 ---

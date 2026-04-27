@@ -35,9 +35,9 @@ translators:
 
 若 <Math><MathI>x</MathI> = 3</Math> 则 <Math><MathI>y</MathI> = 6</Math>。永远如此。
 
-若 <Math><MathI>x</MathI> = 3</Math>，那么 <MathI>y</MathI> 并不会因为时间或股市的影响，而有时等于 <Math>9</Math> 、 <Math>–1</Math> 或 <Math>2.5</Math>。 
+若 <Math><MathI>x</MathI> = 3</Math>，那么 <MathI>y</MathI> 并不会因为时间或股市的影响，而有时等于 <Math>9</Math> 、 <Math>–1</Math> 或 <Math>2.5</Math>。
 
-若 <Math><MathI>y</MathI> = 2<MathI>x</MathI></Math> 且 <Math><MathI>x</MathI> = 3</Math>, 那么 <MathI>y</MathI> _永远_ 等于 <Math>6</Math>. 
+若 <Math><MathI>y</MathI> = 2<MathI>x</MathI></Math> 且 <Math><MathI>x</MathI> = 3</Math>, 那么 <MathI>y</MathI> **永远** 等于 <Math>6</Math>。
 
 我们使用 JavaScript 的函数实现，看起来将会是这样：
 
@@ -56,7 +56,7 @@ React 便围绕着这个概念进行设计。**React 假设你编写的所有组
 ```js src/App.js
 function Recipe({ drinkers }) {
   return (
-    <ol>    
+    <ol>
       <li>Boil {drinkers} cups of water.</li>
       <li>Add {drinkers} spoons of tea and {0.5 * drinkers} spoons of spice.</li>
       <li>Add {0.5 * drinkers} cups of milk to boil and sugar to taste.</li>
@@ -230,7 +230,7 @@ export default function TeaGathering() {
 </Recap>
 
 
-  
+
 <Challenges>
 
 #### 修复坏掉的时钟 {/*fix-a-broken-clock*/}
@@ -455,7 +455,7 @@ export default function App() {
 ```js src/utils.js hidden
 export function getImageUrl(person, size = 's') {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     size +
     '.jpg'
@@ -553,7 +553,7 @@ export default function App() {
 ```js src/utils.js hidden
 export function getImageUrl(person, size = 's') {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     size +
     '.jpg'

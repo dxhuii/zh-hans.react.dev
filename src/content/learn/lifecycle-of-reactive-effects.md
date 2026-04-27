@@ -969,7 +969,7 @@ export default function App() {
       <label>
         <input type="checkbox"
           checked={canMove}
-          onChange={e => setCanMove(e.target.checked)} 
+          onChange={e => setCanMove(e.target.checked)}
         />
         是否允许移动
       </label>
@@ -1027,7 +1027,7 @@ export default function App() {
       <label>
         <input type="checkbox"
           checked={canMove}
-          onChange={e => setCanMove(e.target.checked)} 
+          onChange={e => setCanMove(e.target.checked)}
         />
         是否允许移动
       </label>
@@ -1083,7 +1083,7 @@ export default function App() {
       <label>
         <input type="checkbox"
           checked={canMove}
-          onChange={e => setCanMove(e.target.checked)} 
+          onChange={e => setCanMove(e.target.checked)}
         />
         是否允许移动
       </label>
@@ -1155,7 +1155,7 @@ export default function App() {
       <label>
         <input type="checkbox"
           checked={canMove}
-          onChange={e => setCanMove(e.target.checked)} 
+          onChange={e => setCanMove(e.target.checked)}
         />
         是否允许移动
       </label>
@@ -1220,7 +1220,7 @@ export default function App() {
       <label>
         <input type="checkbox"
           checked={canMove}
-          onChange={e => setCanMove(e.target.checked)} 
+          onChange={e => setCanMove(e.target.checked)}
         />
         是否允许移动
       </label>
@@ -1279,7 +1279,7 @@ export default function App() {
       <label>
         <input type="checkbox"
           checked={canMove}
-          onChange={e => setCanMove(e.target.checked)} 
+          onChange={e => setCanMove(e.target.checked)}
         />
         是否允许移动
       </label>
@@ -1711,7 +1711,7 @@ async function fetchPlanets() {
         name: '金星'
       }, {
         id: 'mars',
-        name: '火星'        
+        name: '火星'
       }]);
     }, 1000);
   });
@@ -1735,7 +1735,7 @@ async function fetchPlaces(planetId) {
           name: '西班牙'
         }, {
           id: 'vietnam',
-          name: '越南'        
+          name: '越南'
         }]);
       } else if (planetId === 'venus') {
         resolve([{
@@ -1746,7 +1746,7 @@ async function fetchPlaces(planetId) {
           name: '戴安娜哈斯玛'
         }, {
           id: 'kumsong-vallis',
-          name: 'Kŭmsŏng山谷'        
+          name: 'Kŭmsŏng 山谷'
         }]);
       } else if (planetId === 'mars') {
         resolve([{
@@ -1879,7 +1879,7 @@ async function fetchPlanets() {
         name: '金星'
       }, {
         id: 'mars',
-        name: '火星'        
+        name: '火星'
       }]);
     }, 1000);
   });
@@ -1903,7 +1903,7 @@ async function fetchPlaces(planetId) {
           name: '西班牙'
         }, {
           id: 'vietnam',
-          name: '越南'        
+          name: '越南'
         }]);
       } else if (planetId === 'venus') {
         resolve([{
@@ -1914,7 +1914,7 @@ async function fetchPlaces(planetId) {
           name: '戴安娜哈斯玛'
         }, {
           id: 'kumsong-vallis',
-          name: 'Kŭmsŏng山谷'        
+          name: 'Kŭmsŏng 山谷'
         }]);
       } else if (planetId === 'mars') {
         resolve([{
@@ -2042,7 +2042,7 @@ async function fetchPlanets() {
         name: '金星'
       }, {
         id: 'mars',
-        name: '火星'        
+        name: '火星'
       }]);
     }, 1000);
   });
@@ -2066,7 +2066,7 @@ async function fetchPlaces(planetId) {
           name: '西班牙'
         }, {
           id: 'vietnam',
-          name: '越南'        
+          name: '越南'
         }]);
       } else if (planetId === 'venus') {
         resolve([{
@@ -2077,7 +2077,7 @@ async function fetchPlaces(planetId) {
           name: '戴安娜哈斯玛'
         }, {
           id: 'kumsong-vallis',
-          name: 'Kŭmsŏng山谷'        
+          name: 'Kŭmsŏng 山谷'
         }]);
       } else if (planetId === 'mars') {
         resolve([{

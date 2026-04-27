@@ -31,7 +31,7 @@ export default function Avatar() {
   return (
     <img
       className="avatar"
-      src="https://i.imgur.com/7vQD0fPs.jpg"
+      src="https://react.dev/images/docs/scientists/7vQD0fPs.jpg"
       alt="Gregorio Y. Zara"
     />
   );
@@ -44,7 +44,7 @@ export default function Avatar() {
 
 </Sandpack>
 
-这里的 `"https://i.imgur.com/7vQD0fPs.jpg"` 和 `"Gregorio Y. Zara"` 就是被作为字符串传递的。
+这里的 `"https://react.dev/images/docs/scientists/7vQD0fPs.jpg"` 和 `"Gregorio Y. Zara"` 就是被作为字符串传递的。
 
 但是如果你想要动态地指定 `src` 或 `alt` 的值呢？你可以 **用 `{` 和 `}` 替代 `"` 和 `"` 以使用 JavaScript 变量** ：
 
@@ -52,7 +52,7 @@ export default function Avatar() {
 
 ```js
 export default function Avatar() {
-  const avatar = 'https://i.imgur.com/7vQD0fPs.jpg';
+  const avatar = 'https://react.dev/images/docs/scientists/7vQD0fPs.jpg';
   const description = 'Gregorio Y. Zara';
   return (
     <img
@@ -193,7 +193,7 @@ export default function TodoList() {
       <h1>{person.name}'的待办事项</h1>
       <img
         className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
+        src="https://react.dev/images/docs/scientists/7vQD0fPs.jpg"
         alt="Gregorio Y. Zara"
       />
       <ul>
@@ -269,7 +269,7 @@ export default function TodoList() {
       <h1>{person}'的待办事项</h1>
       <img
         className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
+        src="https://react.dev/images/docs/scientists/7vQD0fPs.jpg"
         alt="Gregorio Y. Zara"
       />
       <ul>
@@ -317,7 +317,7 @@ export default function TodoList() {
       <h1>{person.name}'的待办事项</h1>
       <img
         className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
+        src="https://react.dev/images/docs/scientists/7vQD0fPs.jpg"
         alt="Gregorio Y. Zara"
       />
       <ul>
@@ -361,7 +361,7 @@ export default function TodoList() {
       <h1>{person.name}'的待办事项</h1>
       <img
         className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
+        src="https://react.dev/images/docs/scientists/7vQD0fPs.jpg"
         alt="Gregorio Y. Zara"
       />
       <ul>
@@ -391,7 +391,7 @@ body > div > div { padding: 20px; }
 ```js
 const person = {
   name: 'Gregorio Y. Zara',
-  imageUrl: "https://i.imgur.com/7vQD0fPs.jpg",
+  imageUrl: "https://react.dev/images/docs/scientists/7vQD0fPs.jpg",
   theme: {
     backgroundColor: 'black',
     color: 'pink'
@@ -431,7 +431,7 @@ body > div > div { padding: 20px; }
 
 在下面的对象中，完整的图片 URL 被分成了四个部分：`baseUrl`、`imageId`、`imageSize` 和`文件拓展名`。
 
-我们希望这些属性组合成图片的 URL：`baseUrl`（一直是 `'https://i.imgur.com/'`）、`imageId`（`'7vQD0fP'`）、`imageSize`（`'s'`）和文件拓展（总是 `'.jpg'`）。但是，`<img>` 标签 `src` 指明的方式是有问题的。
+我们希望这些属性组合成图片的 URL：`baseUrl`（一直是 `'https://react.dev/images/docs/scientists/'`）、`imageId`（`'7vQD0fP'`）、`imageSize`（`'s'`）和文件拓展（总是 `'.jpg'`）。但是，`<img>` 标签 `src` 指明的方式是有问题的。
 
 你能修复它吗？
 
@@ -439,7 +439,7 @@ body > div > div { padding: 20px; }
 
 ```js
 
-const baseUrl = 'https://i.imgur.com/';
+const baseUrl = 'https://react.dev/images/docs/scientists/';
 const person = {
   name: 'Gregorio Y. Zara',
   imageId: '7vQD0fP',
@@ -490,7 +490,7 @@ body > div > div { padding: 20px; }
 <Sandpack>
 
 ```js
-const baseUrl = 'https://i.imgur.com/';
+const baseUrl = 'https://react.dev/images/docs/scientists/';
 const person = {
   name: 'Gregorio Y. Zara',
   imageId: '7vQD0fP',
@@ -567,7 +567,7 @@ export default function TodoList() {
 ```js src/utils.js
 export function getImageUrl(person) {
   return (
-    'https://i.imgur.com/' +
+    'https://react.dev/images/docs/scientists/' +
     person.imageId +
     person.imageSize +
     '.jpg'

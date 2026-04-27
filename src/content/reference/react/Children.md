@@ -155,7 +155,7 @@ function Box({ children }) {
 
 #### 返回值 {/*children-only-returns*/}
 
-如果 `children` [是一个合法的元素](/reference/react/isValidElement)，那么就会返回这个元素。 
+如果 `children` [是一个合法的元素](/reference/react/isValidElement)，那么就会返回这个元素。
 
 否则会抛出一个异常。
 
@@ -861,7 +861,7 @@ export default function App() {
         return (
           <Row isHighlighted={index % 2 === 0}>
             <p>This is the {id} item.</p>
-          </Row> 
+          </Row>
         );
       }}
     />

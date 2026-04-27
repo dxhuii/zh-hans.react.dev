@@ -151,9 +151,8 @@ export default function SiteMapPage() {
 
 ### 控制样式表优先级 {/*controlling-stylesheet-precedence*/}
 
-样式表可能会相互冲突，当发生冲突时，浏览器会选择文档中排在后面的样式表。React 允许使用 `precedence` 属性来控制样式表的顺序。在这个例子中，三个组件渲染样式表，具有相同优先级的组件在 `<head>` 中将会被分组在一起。
 
-{/*FIXME: this doesn't appear to actually work -- I guess precedence isn't implemented yet?*/}
+样式表可能会相互冲突，当发生冲突时，浏览器会选择文档中排在后面的样式表。React 允许使用 `precedence` 属性来控制样式表的顺序。在这个例子中，三个组件渲染样式表，具有相同优先级的组件在 `<head>` 中将会被分组在一起。
 
 <SandpackWithHTMLOutput>
 

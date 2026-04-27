@@ -99,7 +99,7 @@ h3, p { margin: 5px 0px; }
 要协调好这两个面板，我们需要分 3 步将状态“提升”到他们的父组件中。
 
 1. 从子组件中 **移除** state 。
-2. 从父组件 **传递** 硬编码数据。 
+2. 从父组件 **传递** 硬编码数据。
 3. 为共同的父组件添加 state ，并将其与事件处理函数一起向下传递。
 
 这样，`Accordion` 组件就可以控制 2 个 `Panel` 组件，保证同一时间只能展开一个。
@@ -575,7 +575,7 @@ function SearchBar({ query, onChange }) {
 function List({ items }) {
   return (
     <table>
-      <tbody> 
+      <tbody>
         {items.map(food => (
           <tr key={food.id}>
             <td>{food.name}</td>

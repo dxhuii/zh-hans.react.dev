@@ -148,7 +148,7 @@ title: "普通组件（例如 <div>）"
 * `onTransitionEndCapture`：一个在 [捕获阶段](/learn/responding-to-events#capture-phase-events) 触发的 `onTransitionEnd` 版本。
 * [`onWheel`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/wheel_event)：一个 [`WheelEvent` 事件处理函数](#wheelevent-handler)。当用户旋转滚轮按钮时触发。
 * `onWheelCapture`：一个在 [捕获阶段](/learn/responding-to-events#capture-phase-events) 触发的 `onWheel` 版本。
-* [`role`](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Roles)：一个字符串。为辅助技术明确指定元素角色
+* [`role`](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Roles)：一个字符串。为辅助技术明确指定元素角色。
 * [`slot`](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Roles)：一个字符串。当使用 shadow DOM 时，指定插槽名称。在 React 中，通常通过将 JSX 作为 props 传递来实现等效模式。例如 `<Layout left={<Sidebar />} right={<Content />} />`。
 * [`spellCheck`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/spellcheck)：布尔值或空值。如果明确设置为 `true` 或 `false`，则启用或禁用拼写检查。
 * [`tabIndex`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/tabindex)：一个数字。覆盖默认的 Tab 按钮行为。[避免使用除了 -1 和 0 以外的值](https://www.tpgi.com/using-the-tabindex-attribute/)。
@@ -267,7 +267,7 @@ title: "普通组件（例如 <div>）"
 
 <Note>
 
-#### React 19 添加了 `ref` 回调的清理函数。{/*react-19-added-cleanup-functions-for-ref-callbacks*/}
+#### React 19 添加了 `ref` 回调的清理函数。 {/*react-19-added-cleanup-functions-for-ref-callbacks*/}
 
 为了向后兼容，如果 `ref` 回调未返回清理函数，当 `ref` 被分离时 `node` 会被作为 `null` 传递。此行为将在未来版本中删除。
 
@@ -454,7 +454,7 @@ React 事件对象实现了一些标准的 [`Event`](https://developer.mozilla.o
 ### `FocusEvent` 处理函数 {/*focusevent-handler*/}
 
  一个用于焦点事件的事件处理程序类型。
- 
+
 ```js
 <input
   onFocus={e => console.log('onFocus')}
@@ -662,7 +662,7 @@ React 事件对象实现了一些标准的 [`Event`](https://developer.mozilla.o
   * [`shiftKey`](https://developer.mozilla.org/zh-CN/docs/Web/API/TouchEvent/shiftKey)
   * [`touches`](https://developer.mozilla.org/zh-CN/docs/Web/API/TouchEvent/touches)
   * [`targetTouches`](https://developer.mozilla.org/zh-CN/docs/Web/API/TouchEvent/targetTouches)
-  
+
  它还包括继承的 [`UIEvent`](https://developer.mozilla.org/zh-CN/docs/Web/API/UIEvent) 属性：
 
   * [`detail`](https://developer.mozilla.org/zh-CN/docs/Web/API/UIEvent/detail)
@@ -795,7 +795,7 @@ import Avatar from './Avatar.js';
 
 const user = {
   name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageUrl: 'https://react.dev/images/docs/scientists/yXOvdOSs.jpg',
   imageSize: 90,
 };
 

@@ -23,7 +23,7 @@ translators:
 
 </YouWillLearn>
 
-想象一下，你的组件是厨房里的厨师，把食材烹制成美味的菜肴。在这种场景下，React 就是一名服务员，他会帮客户们下单并为他们送来所点的菜品。这种请求和提供 UI 的过程总共包括三个步骤： 
+想象一下，你的组件是厨房里的厨师，把食材烹制成美味的菜肴。在这种场景下，React 就是一名服务员，他会帮客户们下单并为他们送来所点的菜品。这种请求和提供 UI 的过程总共包括三个步骤：
 
 1. **触发** 一次渲染（把客人的点单分发到厨房）
 2. **渲染** 组件（在厨房准备订单）
@@ -60,7 +60,7 @@ root.render(<Image />);
 export default function Image() {
   return (
     <img
-      src="https://i.imgur.com/ZF6s192.jpg"
+      src="https://react.dev/images/docs/scientists/ZF6s192.jpg"
       alt="'Floralis Genérica' by Eduardo Catalano: a gigantic metallic flower sculpture with reflective petals"
     />
   );
@@ -83,7 +83,7 @@ export default function Image() {
 
 ## 步骤 2: React 渲染你的组件 {/*step-2-react-renders-your-components*/}
 
-在你触发渲染后，React 会调用你的组件来确定要在屏幕上显示的内容。**"渲染中" 即 React 在调用你的组件。** 
+在你触发渲染后，React 会调用你的组件来确定要在屏幕上显示的内容。**"渲染中" 即 React 在调用你的组件。**
 
 * **在进行初次渲染时,** React 会调用根组件。
 * **对于后续的渲染,** React 会调用内部状态更新触发了渲染的函数组件。
@@ -109,7 +109,7 @@ export default function Gallery() {
 function Image() {
   return (
     <img
-      src="https://i.imgur.com/ZF6s192.jpg"
+      src="https://react.dev/images/docs/scientists/ZF6s192.jpg"
       alt="'Floralis Genérica' by Eduardo Catalano: a gigantic metallic flower sculpture with reflective petals"
     />
   );

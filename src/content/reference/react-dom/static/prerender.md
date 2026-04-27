@@ -277,7 +277,7 @@ function ProfilePage() {
 
 **只有支持 Suspense 的数据源才能触发 Suspense 组件。** 包括：
 
-- 使用支持 Suspense 的框架（如：[Relay](https://relay.dev/docs/guided-tour/rendering/loading-states/) 和 [Next.js](https://nextjs.org/docs/getting-started/react-essentials)）进行数据获取 
+- 使用支持 Suspense 的框架（如：[Relay](https://relay.dev/docs/guided-tour/rendering/loading-states/) 和 [Next.js](https://nextjs.org/docs/getting-started/react-essentials)）进行数据获取
 - 使用 [`lazy`](/reference/react/lazy) 懒加载组件代码
 - 使用 [`use`](/reference/react/use) 获取 Promise 的结果
 

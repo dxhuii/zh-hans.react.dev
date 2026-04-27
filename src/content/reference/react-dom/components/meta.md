@@ -83,7 +83,7 @@ export default function SiteMapPage() {
 
 ### 使用元数据为文档中的特定项添加注释 {/*annotating-specific-items-within-the-document-with-links*/}
 
-可以使用带有 `itemProp` 属性的 `<meta>` 组件来为文档中的特定项添加元数据注释。在这种情况下，React 不会将这些注释放置在文档 `<head>` 中，而是像任何其他 React 组件一样放置它们。
+可以使用带有 `itemProp` 属性的 `<meta>` 组件来为文档中的特定项添加元数据注释。在这种情况下，React **不会** 将这些注释放置在文档 `<head>` 中，而是像任何其他 React 组件一样放置它们。
 
 ```js
 <section itemScope>

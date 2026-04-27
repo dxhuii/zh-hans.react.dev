@@ -39,7 +39,7 @@ title: panicThreshold
 - **`'none'`** (默认, 推荐): 跳过无法编译的组件并继续构建
 - **`'critical_errors'`**: 仅在关键编译器错误时使构建失败
 - **`'all_errors'`**: 遇到任何编译诊断即使构建失败
-  
+
 #### 注意事项 {/*caveats*/}
 
 - 生产环境构建应始终使用 `'none'`

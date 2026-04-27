@@ -411,14 +411,14 @@ function ChatIndicator() {
   function subscribe() {
     // ...
   }
-  
+
   const isOnline = useSyncExternalStore(subscribe, getSnapshot);
 
   // ...
 }
 ```
-  
-如果重新渲染时你传一个不同的 `subscribe` 函数，React 会重新订阅你的 store。如果这造成了性能问题，因而你想避免重新订阅，就把 `subscribe` 函数移到外面：
+
+如果重新渲染时你传一个不同的 `subscribe` 函数，React 会重新订阅你的 store。如果这造成了性能问题，或者你想避免重新订阅，就把 `subscribe` 函数移到外面：
 
 ```js {1-4}
 // ✅ 总是相同的函数，所以 React 不需要重新订阅
@@ -440,7 +440,7 @@ function ChatIndicator({ userId }) {
   const subscribe = useCallback(() => {
     // ...
   }, [userId]);
-  
+
   const isOnline = useSyncExternalStore(subscribe, getSnapshot);
 
   // ...

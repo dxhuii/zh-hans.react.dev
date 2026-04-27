@@ -43,7 +43,7 @@ function MyComponent() {
 #### 注意事项 {/*caveats*/}
 
 * 组件中的 `useContext()` 调用不受 **同一** 组件返回的 provider 的影响。相应的 `<Context>` 需要位于调用 `useContext()` 的组件 **之上**。
-* 从 provider 接收到不同的 `value` 开始，React 自动重新渲染使用了该特定 context 的所有子级。先前的值和新的值会使用 [`Object.is`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is) 来做比较。使用 [`memo`](/reference/react/memo) 来跳过重新渲染并不妨碍子级接收到新的 context 值。 
+* 从 provider 接收到不同的 `value` 开始，React 自动重新渲染使用了该特定 context 的所有子级。先前的值和新的值会使用 [`Object.is`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is) 来做比较。使用 [`memo`](/reference/react/memo) 来跳过重新渲染并不妨碍子级接收到新的 context 值。
 * 如果你的构建系统在输出中产生重复的模块（可能发生在符号链接中），这可能会破坏 context。通过 context 传递数据只有在用于传递 context 的 `SomeContext` 和用于读取数据的  `SomeContext` 是完全相同的对象时才有效，这是由 `===` 比较决定的。
 
 ---
@@ -60,7 +60,7 @@ import { useContext } from 'react';
 
 function Button() {
   const theme = useContext(ThemeContext);
-  // ... 
+  // ...
 ```
 
 `useContext` 返回你向 <CodeStep step={1}>context</CodeStep> 传递的 <CodeStep step={2}>context value</CodeStep>。为了确定 context 值，React 搜索组件树，为这个特定的 context **向上查找最近的** context provider。
@@ -81,7 +81,7 @@ function Form() {
 }
 ```
 
-provider 和 `Button` 之间有多少层组件并不重要。当 `Form` 中的任何位置的 `Button` 调用 `useContext(ThemeContext)` 时，它都将接收 `"dark"` 作为值。 
+provider 和 `Button` 之间有多少层组件并不重要。当 `Form` 中的任何位置的 `Button` 调用 `useContext(ThemeContext)` 时，它都将接收 `"dark"` 作为值。
 
 <Pitfall>
 
@@ -845,7 +845,7 @@ export default function AddTask() {
           type: 'added',
           id: nextId++,
           text: text,
-        }); 
+        });
       }}>Add</button>
     </>
   );
@@ -1292,7 +1292,7 @@ export const LevelContext = createContext(0);
 
 你可以通过 context 传递任何值，包括对象和函数。
 
-```js [[2, 10, "{ currentUser, login }"]] 
+```js [[2, 10, "{ currentUser, login }"]]
 function MyApp() {
   const [currentUser, setCurrentUser] = useState(null);
 
@@ -1345,7 +1345,7 @@ function MyApp() {
 
 ## 疑难解答 {/*troubleshooting*/}
 
-### 我的组件获取不到 provider 传递的值{/*my-component-doesnt-see-the-value-from-my-provider*/}
+### 我的组件获取不到 provider 传递的值 {/*my-component-doesnt-see-the-value-from-my-provider*/}
 
 这里有几种常见的情况会引起这个问题：
 

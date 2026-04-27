@@ -3,12 +3,12 @@ title: 编译库
 ---
 
 <Intro>
-本指南旨在帮助库作者理解如何使用 React 编译器来为用户提供经过优化的库代码。  
+本指南旨在帮助库作者理解如何使用 React 编译器来为用户提供经过优化的库代码。
 </Intro>
 
 <InlineToc />
 
-## 为什么要发布编译后的代码？{/*why-ship-compiled-code*/}
+## 为什么要发布编译后的代码？ {/*why-ship-compiled-code*/}
 
 作为库作者，你可以在将代码发布到 npm 之前编译。这样做有几个好处：
 
@@ -65,7 +65,7 @@ npm install react-compiler-runtime@latest
 
 ```js
 {
-  target: '17', // 最低支持的 React 版本 
+  target: '17', // 最低支持的 React 版本
 }
 ```
 

@@ -412,7 +412,7 @@ function Form() {
 
   function handleSubmit() {
     setSubmitted(true);
-  }  
+  }
 
   // ...
 }
@@ -430,7 +430,7 @@ function Form() {
     // ✅ 好：从事件处理程序调用特定于事件的逻辑
     post('/api/register');
     showNotification('Successfully registered!', theme);
-  }  
+  }
 
   // ...
 }
@@ -879,7 +879,7 @@ const options2 = { serverUrl: 'https://localhost:1234', roomId: '音乐' };
 console.log(Object.is(options1, options2)); // false
 ```
 
-**对象和函数作为依赖，会使 Effect 比你需要的更频繁地重新同步**。
+**将对象和函数作为依赖，会使 Effect 比你需要的更频繁地重新同步**。
 
 这就是为什么你应该尽可能避免将对象和函数作为 Effect 的依赖。所以，尝试将它们移到组件外部、Effect 内部，或从中提取原始值。
 

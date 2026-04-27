@@ -110,7 +110,7 @@ export async function submitForm(query) {
     await new Promise((res) => setTimeout(res, 1000));
 }
 ```
-</Sandpack>  
+</Sandpack>
 
 <Pitfall>
 
@@ -132,7 +132,7 @@ function Form() {
 ```js
 function Submit() {
   // ✅ `pending` 将从包裹 Submit 组件的表单派生
-  const { pending } = useFormStatus(); 
+  const { pending } = useFormStatus();
   return <button disabled={pending}>...</button>;
 }
 
@@ -168,7 +168,7 @@ export default function UsernameForm() {
       <h3>请求用户名：</h3>
       <input type="text" name="username" disabled={pending}/>
       <button type="submit" disabled={pending}>
-        提交  
+        提交
       </button>
       <br />
       <p>{data ? `请求 ${data?.get("username")}...`: ''}</p>
@@ -215,7 +215,7 @@ button {
 
 ```
 
-</Sandpack>  
+</Sandpack>
 
 ---
 

@@ -59,7 +59,7 @@ function UpdateName({}) {
     if (error) {
       setError(error);
       return;
-    } 
+    }
     redirect("/path");
   };
 
@@ -92,7 +92,7 @@ function UpdateName({}) {
       if (error) {
         setError(error);
         return;
-      } 
+      }
       redirect("/path");
     })
   };
@@ -308,7 +308,7 @@ function Heading({children}) {
   if (children == null) {
     return null;
   }
-  
+
   // 因为过早的返回
   // 这里 useContext 无法正常工作。
   const theme = use(ThemeContext);
@@ -330,7 +330,7 @@ We've added two new APIs to `react-dom/static` for static site generation:
 - [`prerender`](/reference/react-dom/static/prerender)
 - [`prerenderToNodeStream`](/reference/react-dom/static/prerenderToNodeStream)
 
-These new APIs improve on `renderToString` by waiting for data to load for static HTML generation. They are designed to work with streaming environments like Node.js Streams and Web Streams. For example, in a Web Stream environment, you can prerender a React tree to static HTML with `prerender`: 
+These new APIs improve on `renderToString` by waiting for data to load for static HTML generation. They are designed to work with streaming environments like Node.js Streams and Web Streams. For example, in a Web Stream environment, you can prerender a React tree to static HTML with `prerender`:
 
 ```js
 import { prerender } from 'react-dom/static';
@@ -497,7 +497,7 @@ function App({children}) {
     <ThemeContext value="dark">
       {children}
     </ThemeContext>
-  );  
+  );
 }
 ```
 
@@ -551,7 +551,7 @@ function Search({deferredValue}) {
   // On initial render the value is ''.
   // Then a re-render is scheduled with the deferredValue.
   const value = useDeferredValue(deferredValue, '');
-  
+
   return (
     <Results query={value} />
   );

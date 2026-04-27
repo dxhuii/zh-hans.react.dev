@@ -46,7 +46,7 @@ title: target
 - 不要包含补丁版本号（例如使用 `'18'` 而非 `'18.2.0'`）
 - React 19 已内置编译器运行时 API
 - React 17 与 18 需要安装 `react-compiler-runtime@latest`
-  
+
 ---
 
 ## 用法 {/*usage*/}
@@ -81,7 +81,7 @@ npm install react-compiler-runtime@latest
 2. 配置 target:
 
 ```js
-// 对于 React 18 
+// 对于 React 18
 {
   target: '18'
 }

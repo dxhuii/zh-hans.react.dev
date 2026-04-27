@@ -63,7 +63,7 @@ function Tooltip() {
 
 * 如果你的一些依赖项是组件内部定义的对象或函数，则存在这样的风险，即它们将 **导致 Effect 重新运行的次数多于所需的次数**。要解决这个问题，请删除不必要的 [对象](/reference/react/useEffect#removing-unnecessary-object-dependencies) 和 [函数](/reference/react/useEffect#removing-unnecessary-function-dependencies) 依赖项。你还可以 [抽离状态更新](/reference/react/useEffect#updating-state-based-on-previous-state-from-an-effect) 和 [非响应式逻辑](/reference/react/useEffect#reading-the-latest-props-and-state-from-an-effect) 到 Effect 之外。
 
-* Effect **只在客户端上运行**，在服务端渲染中不会运行。 
+* Effect **只在客户端上运行**，在服务端渲染中不会运行。
 
 * `useLayoutEffect` 内部的代码和所有计划的状态更新阻塞了浏览器重新绘制屏幕。如果过度使用，这会使你的应用程序变慢。如果可能的话，尽量选择 [`useEffect`](/reference/react/useEffect)。
 

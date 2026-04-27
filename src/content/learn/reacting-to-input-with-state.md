@@ -523,7 +523,7 @@ export default function Picture() {
       <img
         className="picture"
         alt="Rainbow houses in Kampung Pelangi, Indonesia"
-        src="https://i.imgur.com/5qwVYb1.jpeg"
+        src="https://react.dev/images/docs/scientists/5qwVYb1.jpeg"
       />
     </div>
   );
@@ -599,7 +599,7 @@ export default function Picture() {
         }}
         className={pictureClassName}
         alt="Rainbow houses in Kampung Pelangi, Indonesia"
-        src="https://i.imgur.com/5qwVYb1.jpeg"
+        src="https://react.dev/images/docs/scientists/5qwVYb1.jpeg"
       />
     </div>
   );
@@ -654,7 +654,7 @@ export default function Picture() {
         <img
           className="picture picture--active"
           alt="Rainbow houses in Kampung Pelangi, Indonesia"
-          src="https://i.imgur.com/5qwVYb1.jpeg"
+          src="https://react.dev/images/docs/scientists/5qwVYb1.jpeg"
           onClick={e => e.stopPropagation()}
         />
       </div>
@@ -665,7 +665,7 @@ export default function Picture() {
       <img
         className="picture"
         alt="Rainbow houses in Kampung Pelangi, Indonesia"
-        src="https://i.imgur.com/5qwVYb1.jpeg"
+        src="https://react.dev/images/docs/scientists/5qwVYb1.jpeg"
         onClick={() => setIsActive(true)}
       />
     </div>
@@ -847,7 +847,7 @@ label { display: block; margin-bottom: 20px; }
 
 你需要两个 state 变量来保存输入框中的内容：`firstName` 和 `lastName`。同时你还会需要一个 `isEditing` 的 state 变量来保存是否显示输入框的状态。你应该**不**需要 `fullName` 变量，因为全名可以由`firstName` 和 `lastName` 组合而成。
 
-最终，你应该根据 `isEditing` 的值使用 [条件渲染](/learn/conditional-rendering) 来决定显示还是隐藏输入框。 
+最终，你应该根据 `isEditing` 的值使用 [条件渲染](/learn/conditional-rendering) 来决定显示还是隐藏输入框。
 
 <Sandpack>
 
