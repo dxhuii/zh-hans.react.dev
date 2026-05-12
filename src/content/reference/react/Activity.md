@@ -761,7 +761,7 @@ video { width: 300px; margin-top: 10px; aspect-ratio: 16/9; }
 - 使用 [`lazy`](/reference/react/lazy) 延迟加载（Lazy-loading）组件代码
 - 使用 [`use`](/reference/react/use) 读取缓存的 Promise 的值
 
-`Activity` **无法**检测到在 Effect 内部获取的数据。
+`Activity` **无法** 检测到在 Effect 内部获取的数据。
 
 你在上述 `Posts` 组件中加载数据的具体方式取决于你所使用的框架。如果你使用的是支持 `Suspense` 的框架，你可以在其数据获取文档中找到相关细节。
 
