@@ -38,17 +38,17 @@ title: <Activity>
 
 通过这种方式，`Activity` 可以被视为一种渲染“后台活动”的机制。与其完全丢弃那些可能再次显示的内容，不如使用 `Activity` 来保持并恢复这些内容的 UI 和内部状态，同时确保隐藏的内容不会产生多余的副作用。
 
-[请参阅下方的更多示例]。(#usage)
+[请参阅下方的更多示例。](#usage)
 
 #### Props {/*props*/}
 
-* `children`： 你想要显示或隐藏的 UI。
-* `mode`： 字符串值，取值为 `'visible'` 或 `'hidden'`。如果省略，默认值为 `'visible'`。
+* `children`：你想要显示或隐藏的 UI。
+* `mode`：字符串值，取值为 `'visible'` 或 `'hidden'`。如果省略，默认值为 `'visible'`。
 
 #### Caveats {/*caveats*/}
 
 - 如果 Activity 被渲染在 [ViewTransition](/reference/react/ViewTransition) 内部，并且由于 [startTransition](/reference/react/startTransition) 触发的更新而变为可见，它将触发 ViewTransition 的 `enter` 动画。如果它变为隐藏，则会触发其 `exit` 动画。
-- 仅渲染文本的 `Activity` 不会渲染出任何内容，而不是渲染出“隐藏的文本”，因为没有相应的 DOM 元素可以应用可见性变化。例如，对于 `const ComponentThatJustReturnsText = () => "Hello, World!"`，执行 `<Activity mode="hidden"><ComponentThatJustReturnsText /></Activity>` 在 DOM 中不会产生任何输出。
+- 一个处于 hidden 状态、且仅渲染文本内容的 Activity 不会在 DOM 中渲染任何内容，而不是渲染“隐藏的文本”，因为没有对应的 DOM 元素可以应用可见性变化。例如，对于 `const ComponentThatJustReturnsText = () => "Hello, World!"`，执行 `<Activity mode="hidden"><ComponentThatJustReturnsText /></Activity>` 时，DOM 中不会产生任何输出；而 `<Activity mode="visible"><ComponentThatJustReturnsText /></Activity>` 则会渲染出可见文本。
 
 ---
 
