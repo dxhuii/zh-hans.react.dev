@@ -469,7 +469,7 @@ b { display: inline-block; margin-right: 10px; }
 
 到目前为止，我们已经了解了 `Activity` 是如何在隐藏用户交互过的内容的同时，而不丢弃这些内容的瞬时状态（ephemeral state）的。
 
-不仅如此，`Activity` 边界还可以用来预先**准备**那些用户尚未初次看到的内容：
+不仅如此，`Activity` 边界还可以用来预先 **准备** 那些用户尚未初次看到的内容：
 
 ```jsx [[1, 1, "\\"hidden\\""]]
 <Activity mode="hidden">
