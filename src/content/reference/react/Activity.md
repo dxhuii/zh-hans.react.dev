@@ -611,7 +611,7 @@ video { width: 300px; margin-top: 10px; aspect-ratio: 16/9; }
 
 </Sandpack>
 
-这是因为 `App` 组件直到 `Posts` 标签页变为活跃状态时才会挂载 `Posts`
+这是因为 `App` 组件直到 `Posts` 标签页变为活跃状态时才会挂载 `Posts`。
 
 如果我们更新 `App`，改用 `Activity` 边界来显示和隐藏活跃标签页，那么 `Posts` 将在应用初始加载时被预渲染，从而允许它在变得可见之前就获取到所需数据。
 
