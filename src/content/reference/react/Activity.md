@@ -281,7 +281,7 @@ h1 {
 
 ### 恢复隐藏组件的 DOM {/*restoring-the-dom-of-hidden-components*/}
 
-由于 `Activity` 边界使用 `display: none` 来隐藏其子组件，因此这些子组件的 DOM 在隐藏时也会被保留。这使得它们非常适合用于维护 UI 中那些用户可能会再次交互的部分的瞬时状态。
+由于 `Activity` 边界使用 `display: none` 来隐藏其子组件，因此这些子组件的 DOM 在隐藏时也会被保留。这使得它们非常适合用于维护 UI 中那些用户可能会再次交互的部分的 ephemeral state。
 
 在此示例中，`Contact` 标签页包含一个 `<textarea>`，用户可以在其中输入消息。如果你输入了一些文本，切换到 `Home` 标签页，然后再切回 `Contact` 标签页，那么草稿消息将会丢失：
 
@@ -467,7 +467,7 @@ b { display: inline-block; margin-right: 10px; }
 
 ### 预渲染可能变为可见的内容 {/*pre-rendering-content-thats-likely-to-become-visible*/}
 
-到目前为止，我们已经了解了 `Activity` 是如何在隐藏用户交互过的内容的同时，而不丢弃这些内容的瞬时状态（ephemeral state）的。
+到目前为止，我们已经了解了 `Activity` 是如何在隐藏用户交互过的内容的同时，而不丢弃这些内容的 ephemeral state 的。
 
 不仅如此，`Activity` 边界还可以用来预先 **准备** 那些用户尚未初次看到的内容：
 
