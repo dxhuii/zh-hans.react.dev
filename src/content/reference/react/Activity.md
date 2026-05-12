@@ -757,7 +757,7 @@ video { width: 300px; margin-top: 10px; aspect-ratio: 16/9; }
 
 **只有支持 `Suspense` 的数据源才会在预渲染期间被获取。** 它们包括：
 
-- 使用支持 `Suspense` 的框架进行数据获取，例如[Relay](https://relay.dev/docs/guided-tour/rendering/loading-states/) 和 [Next.js](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming#streaming-with-suspense)
+- 使用支持 `Suspense` 的框架进行数据获取，例如 [Relay](https://relay.dev/docs/guided-tour/rendering/loading-states/) 和 [Next.js](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming#streaming-with-suspense)
 - 使用 [`lazy`](/reference/react/lazy) 延迟加载（Lazy-loading）组件代码
 - 使用 [`use`](/reference/react/use) 读取缓存的 Promise 的值
 
