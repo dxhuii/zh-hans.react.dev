@@ -854,7 +854,7 @@ function Page() {
 }
 ```
 
-……但这同时也会改变 UI 表现，因为在初始渲染期间会显示 `Placeholder` 回退内容
+……但这同时也会改变 UI 表现，因为在初始渲染期间会显示 `Placeholder` 回退内容。
 
 相反，我们可以使用 `Activity`。由于 `Activity` 边界负责显示和隐藏其子组件，它们已经自然地将组件树划分成了彼此独立的单元。而且与 `Suspense` 一样，这一特性使得它们能够参与到“选择性注水（Selective Hydration）”中。
 
