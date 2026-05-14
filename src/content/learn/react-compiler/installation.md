@@ -64,9 +64,36 @@ module.exports = {
 
 ### Vite {/*vite*/}
 
+<<<<<<< HEAD
 如果你使用 Vite，可以将插件添加到 vite-plugin-react 中：
+=======
+If you use Vite with version 6.0.0 or later of `@vitejs/plugin-react`, you can use the `reactCompilerPreset`:
+>>>>>>> 47e64bf7ad81aab8bacfa791a37816ee869135eb
 
-```js {3,9}
+<TerminalBlock>
+npm install -D @rolldown/plugin-babel
+</TerminalBlock>
+
+```js {3-4,9-11}
+// vite.config.js
+import { defineConfig } from 'vite';
+import react, { reactCompilerPreset } from '@vitejs/plugin-react';
+import babel from '@rolldown/plugin-babel';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    babel({
+      presets: [reactCompilerPreset()]
+    }),
+  ],
+});
+```
+
+<Note>
+In `@vitejs/plugin-react@6.0.0`, the inline Babel option was removed. If you're using an older version, you can use:
+
+```js
 // vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -81,26 +108,25 @@ export default defineConfig({
   ],
 });
 ```
+</Note>
 
+<<<<<<< HEAD
 或者，如果你更倾向于为 Vite 使用一个独立的 Babel 插件：
+=======
+Alternatively, you can use the Babel plugin directly with `@rolldown/plugin-babel`:
+>>>>>>> 47e64bf7ad81aab8bacfa791a37816ee869135eb
 
-<TerminalBlock>
-npm install -D vite-plugin-babel
-</TerminalBlock>
-
-```js {2,11}
+```js {3,9}
 // vite.config.js
-import babel from 'vite-plugin-babel';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import babel from '@rolldown/plugin-babel';
 
 export default defineConfig({
   plugins: [
     react(),
     babel({
-      babelConfig: {
-        plugins: ['babel-plugin-react-compiler'],
-      },
+      plugins: ['babel-plugin-react-compiler'],
     }),
   ],
 });
