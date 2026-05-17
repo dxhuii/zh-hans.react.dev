@@ -64,11 +64,7 @@ module.exports = {
 
 ### Vite {/*vite*/}
 
-<<<<<<< HEAD
-如果你使用 Vite，可以将插件添加到 vite-plugin-react 中：
-=======
-If you use Vite with version 6.0.0 or later of `@vitejs/plugin-react`, you can use the `reactCompilerPreset`:
->>>>>>> 47e64bf7ad81aab8bacfa791a37816ee869135eb
+如果你使用 Vite v6.0.0 或者更高版本，那么可以从 `@vitejs/plugin-react` 中导出并配置 `reactCompilerPreset`：
 
 <TerminalBlock>
 npm install -D @rolldown/plugin-babel
@@ -91,7 +87,7 @@ export default defineConfig({
 ```
 
 <Note>
-In `@vitejs/plugin-react@6.0.0`, the inline Babel option was removed. If you're using an older version, you can use:
+从 `@vitejs/plugin-react@6.0.0` 开始，内联的 Babel 选项已经被移除。如果你使用的是更低版本，可以通过下面的方式进行配置：
 
 ```js
 // vite.config.js
@@ -110,11 +106,7 @@ export default defineConfig({
 ```
 </Note>
 
-<<<<<<< HEAD
-或者，如果你更倾向于为 Vite 使用一个独立的 Babel 插件：
-=======
-Alternatively, you can use the Babel plugin directly with `@rolldown/plugin-babel`:
->>>>>>> 47e64bf7ad81aab8bacfa791a37816ee869135eb
+或者, 你也可以通过 `@rolldown/plugin-babel` 直接使用 Babel 插件。
 
 ```js {3,9}
 // vite.config.js
